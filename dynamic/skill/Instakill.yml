@@ -1,0 +1,39 @@
+Instakill:
+  type: Target
+  indicator: golden Apple,1
+  max-level: 1
+  needs-permission: false
+  description:
+  - '666 y los póquimon son'
+  - 'del diablo... EL'
+  - 'DIABLOOOOOOO'
+  message: 'eres un mal admin'
+  permissions: []
+  active:
+    m0:
+      effect: Damage
+      target: Target
+      group: All
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 0
+    Cost:
+      base: 0
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 0
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+    Damage:
+      base: 7777
+      scale: 0
+  values: {}
+  strings: {}
