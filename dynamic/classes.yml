@@ -1,5 +1,5 @@
 # If you manually modify this file,
-# set loaded to false
+# set loaded to false.
 loaded: false
 Prueba:
   prefix: Prueba
