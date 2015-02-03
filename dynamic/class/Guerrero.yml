@@ -1,9 +1,9 @@
 Guerrero:
-  prefix: '&2'
+  prefix: '&2G'
   max-level: 20
   health-base: 22
   health-scale: 1
-  mana-base: 20
+  mana-base: 100
   mana-scale: 0
   profess-level: 15
   needs-permission: true

@@ -1,6 +1,6 @@
 Cargar:
   type: Self
-  indicator: Wood Axe,0
+  indicator: Iron Sword,0
   max-level: 1
   needs-permission: false
   description:
@@ -34,7 +34,7 @@ Cargar:
       base: 1
       scale: 0
     Mana:
-      base: 0
+      base: 35
       scale: 0
     Cooldown:
       base: 120
