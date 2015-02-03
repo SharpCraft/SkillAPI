@@ -4,9 +4,9 @@ Cura:
   max-level: 3
   needs-permission: false
   description:
-  - '... cura... ¿que mas'
-  - 'quieres?'
-  message: 'Cura!'
+  - 'Cura'
+  - 'Cura'
+  message: 'Cura'
   permissions: []
   active:
     m0:

@@ -4,12 +4,12 @@ Cargar:
   max-level: 1
   needs-permission: false
   description:
-  - 'Carga hacia el objetivo'
-  - 'inflingiendo un corazón y'
+  - 'Carga hacia el objetivo,'
+  - 'infligiendo un corazón y'
   - 'tu proxima habilidad'
-  - 'inflinge un punto más de'
-  - 'daño'
-  message: 'Cargas hacia el objetivo'
+  - 'inflige un punto más de'
+  - 'daño.'
+  message: 'Cargas hacia el objetivo.'
   permissions: []
   active:
     m0:
