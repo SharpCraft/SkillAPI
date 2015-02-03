@@ -1,0 +1,40 @@
+Coraza:
+  type: Target
+  indicator: leather helmet,0
+  max-level: 2
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description: []
+  permissions: []
+  active:
+    m0:
+      effect: DamageReduction
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 5
+      scale: 5
+    Cooldown:
+      base: 30
+      scale: 10
+    Range:
+      base: 8
+      scale: 0
+    Reduction:
+      base: 8
+      scale: 7
+    Reduction Duration:
+      base: 40
+      scale: 20
+  values: {}
+  strings: {}

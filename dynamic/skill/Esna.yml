@@ -1,0 +1,49 @@
+Esna:
+  type: Target
+  indicator: milk bucket,0
+  max-level: 1
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'libera de cualquier'
+  - 'estado!'
+  message: 'Esna!'
+  permissions: []
+  active:
+    m0:
+      effect: Cleanse
+      target: Target
+      group: Ally
+    m1:
+      effect: Potion
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 5
+      scale: 0
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 15
+      scale: 0
+    Cooldown:
+      base: 30
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+    Tier:
+      base: 0
+      scale: 0
+    Duration:
+      base: 0
+      scale: 0
+  values:
+    Cleanse: 255
+    Type: 19
+  strings: {}

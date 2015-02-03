@@ -1,0 +1,46 @@
+Vidamagi:
+  type: Target
+  indicator: golden apple,0
+  max-level: 5
+  skill-req: Cura
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'regeneras vida con el'
+  - 'paso en el tiempo'
+  message: 'vidamigi!'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: HOT
+      target: Self
+      group: Ally
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 5
+      scale: 3
+    Cooldown:
+      base: 10
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Passive Health Per Tick:
+      base: 1
+      scale: 0
+    Passive Heal Duration:
+      base: 5
+      scale: 3
+    Passive Heal Frequency:
+      base: 1
+      scale: 5
+  values: {}
+  strings: {}

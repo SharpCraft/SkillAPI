@@ -1,0 +1,40 @@
+Sanctus:
+  type: Target
+  indicator: Apple,0
+  max-level: 5
+  skill-req: Laser
+  skill-req-level: 3
+  needs-permission: false
+  description:
+  - 'Atacas con todo el poder'
+  - 'de la luz'
+  message: 'Sanctus!'
+  permissions: []
+  active:
+    m0:
+      effect: Damage
+      target: Area
+      group: Enemy
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 5
+      scale: 0
+    Cost:
+      base: 2
+      scale: 0
+    Mana:
+      base: 5
+      scale: 0
+    Cooldown:
+      base: 1
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Damage:
+      base: 8
+      scale: 6
+  values: {}
+  strings: {}

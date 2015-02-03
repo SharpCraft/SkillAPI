@@ -1,0 +1,38 @@
+Sacro:
+  type: Target
+  indicator: Apple,0
+  max-level: 1
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Te libera de maldiciones'
+  - 'y del fuego'
+  message: 'Sacro!'
+  permissions: []
+  active:
+    m0:
+      effect: Cleanse
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 3
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 0
+    Cooldown:
+      base: 20
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+  values:
+    Cleanse: 130
+  strings: {}
