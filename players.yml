@@ -1,0 +1,12 @@
+players:
+  a06c7ea5-2ffb-3c17-90ea-9adabf3149a2:
+    class: Prueba
+    level: 11
+    exp: 0
+    points: 1
+    mana: 20
+    values: {}
+    skills:
+      prueba1: 5
+      prueba2: 5
+      assassins blade: 0

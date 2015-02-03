@@ -1,0 +1,17 @@
+Prueba:
+  prefix: Prueba
+  max-level: 40
+  profess-level: 40
+  skills:
+  - Prueba1
+  - Prueba2
+  - Assassins Blade
+  inherit: []
+  health-base: 20.0
+  health-scale: 0.0
+  mana-base: 20.0
+  mana-scale: 0.0
+  passive-mana-gain: true
+  mana-name: Mana
+  permissions: []
+  needs-permission: false

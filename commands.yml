@@ -1,0 +1,107 @@
+class:
+  sender: ANYONE
+  enabled: true
+  name: class
+forceprofess:
+  name: forceprofess
+  description: Professes a player
+  args: <class> <player>
+  sender: CONSOLE_ONLY
+  enabled: true
+forcereset:
+  name: forcereset
+  description: Resets a player
+  args: <player>
+  sender: CONSOLE_ONLY
+  enabled: true
+bar:
+  name: bar
+  description: Toggles the skill bar
+  permission: skillapi.basic
+  args: ''
+  sender: PLAYER_ONLY
+  enabled: true
+bind:
+  name: bind
+  description: Binds skill to held item
+  permission: skillapi.basic
+  args: <skill>
+  sender: PLAYER_ONLY
+  enabled: true
+cast:
+  name: cast
+  description: Casts a skill
+  permission: skillapi.basic
+  args: <skill>
+  sender: PLAYER_ONLY
+  enabled: true
+exp:
+  name: exp
+  description: Gives a player exp
+  permission: skillapi.exp
+  args: <amount> [player]
+  sender: ANYONE
+  enabled: true
+info:
+  name: info
+  description: Views details of player
+  permission: skillapi.basic
+  args: '[player]'
+  sender: ANYONE
+  enabled: true
+level:
+  name: level
+  description: Levels a player up
+  permission: skillapi.level
+  args: <amount> [player]
+  sender: ANYONE
+  enabled: true
+options:
+  name: options
+  description: Views profession options
+  permission: skillapi.basic
+  args: ''
+  sender: PLAYER_ONLY
+  enabled: true
+points:
+  name: points
+  description: Gives skill points
+  permission: skillapi.points
+  args: <amount> [player]
+  sender: ANYONE
+  enabled: true
+profess:
+  name: profess
+  description: Professes as a class
+  permission: skillapi.basic
+  args: <class>
+  sender: PLAYER_ONLY
+  enabled: true
+reload:
+  name: reload
+  description: Reloads the plugin
+  permission: skillapi.reload
+  args: ''
+  sender: ANYONE
+  enabled: true
+reset:
+  name: reset
+  description: Resets all stats
+  permission: skillapi.reset
+  args: ''
+  sender: PLAYER_ONLY
+  enabled: true
+skills:
+  name: skills
+  description: Opens skill tree
+  permission: skillapi.basic
+  args: ''
+  sender: PLAYER_ONLY
+  enabled: true
+unbind:
+  name: unbind
+  description: Unbinds held item
+  permission: skillapi.basic
+  args: ''
+  sender: PLAYER_ONLY
+  enabled: true

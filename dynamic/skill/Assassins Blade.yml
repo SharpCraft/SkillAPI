@@ -1,0 +1,66 @@
+Assassins Blade:
+  type: PASSIVE
+  indicator: DIAMOND_SWORD,0
+  max-level: 5
+  skill-req-level: 0
+  description:
+  - 'Shift-Left Click : Coats'
+  - your blade in poison and
+  - allows you to see at
+  - night
+  permissions: []
+  needs-permission: false
+  attributes:
+    Mana:
+      base: 10.0
+      scale: 20.0
+    Cooldown:
+      base: 30.0
+      scale: 0.0
+    Period:
+      base: 3.0
+      scale: 0.0
+    Embed Damage:
+      base: 25.0
+      scale: 16.0
+    Level:
+      base: 1.0
+      scale: 8.0
+    Range:
+      base: 8.0
+      scale: 0.0
+    Modifier Duration:
+      base: 1800.0
+      scale: 0.0
+    Attacks:
+      base: 3600.0
+      scale: 0.0
+    Cost:
+      base: 1.0
+      scale: 1.0
+    Passive Tier:
+      base: 2.0
+      scale: 0.0
+    Passive Duration:
+      base: 5.0
+      scale: 0.0
+  values:
+    Type: 16
+    Attack Type: 1
+  aliased: {}
+  strings: {}
+  passive:
+    m0:
+      effect: Potion
+      target: SELF
+      group: ALLY
+  active:
+    m0:
+      effect: AttackModifier
+      target: SELF
+      group: ALLY
+  embed:
+    m0:
+      effect: Damage
+      target: TARGET
+      group: ENEMY
