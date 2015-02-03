@@ -6,7 +6,6 @@ Admin:
   mana-base: 200
   mana-scale: 150
   profess-level: 1
-  offset: 0
   needs-permission: true
   permissions: []
   skills:

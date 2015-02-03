@@ -2,8 +2,6 @@ Esna:
   type: Target
   indicator: milk bucket,0
   max-level: 1
-  skill-req: Antidoto
-  skill-req-level: 1
   needs-permission: false
   description:
   - 'libera de cualquier'
@@ -23,7 +21,7 @@ Esna:
   embed: {}
   attributes:
     Level:
-      base: 6
+      base: 15
       scale: 0
     Cost:
       base: 1

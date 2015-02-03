@@ -36,8 +36,8 @@ Antidoto:
       base: 0
       scale: 0
     Duration:
-      base: 0
-      scale: 0
+      base: 5
+      scale: 2
   values:
     Type: 19
   strings: {}

@@ -1,0 +1,43 @@
+Escudo:
+  type: Target
+  indicator: eye of ender,0
+  max-level: 1
+  skill-req: Coraza
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Protege de un 10% del'
+  - 'daño'
+  message: 'Escudo!'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: DamagePercentReduction
+      target: Self
+      group: Ally
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 0
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Passive Percent Reduction:
+      base: 10
+      scale: 0
+    Passive Percent Reduction Duration:
+      base: 60
+      scale: 0
+  values: {}
+  strings: {}

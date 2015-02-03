@@ -2,8 +2,6 @@ Coraza:
   type: Target
   indicator: leather helmet,0
   max-level: 2
-  skill-req: Antidoto
-  skill-req-level: 1
   needs-permission: false
   description:
   - 'Te protege de cierto daño'

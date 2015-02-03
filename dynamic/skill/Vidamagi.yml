@@ -1,7 +1,7 @@
 Vidamagi:
   type: Self
   indicator: golden apple,0
-  max-level: 5
+  max-level: 3
   skill-req: Cura
   skill-req-level: 1
   needs-permission: false

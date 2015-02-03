@@ -1,6 +1,6 @@
 Sacro:
   type: Target
-  indicator: Apple,0
+  indicator: cookie,0
   max-level: 1
   skill-req: Antidoto
   skill-req-level: 1

@@ -1,17 +1,18 @@
-Sanctus:
-  type: Linear
-  indicator: golden carrot,0
-  max-level: 3
+Santificar:
+  type: Skill Shot AOE
+  indicator: gold ingot,0
+  max-level: 2
+  skill-req: Sanctus
+  skill-req-level: 1
   needs-permission: false
   description:
-  - 'Atacas con todo el poder'
-  - 'de la luz'
-  message: 'Sanctus!'
+  - 'Santifica toda una zona'
+  message: 'Santificar'
   permissions: []
   active:
     m0:
       effect: Damage
-      target: Linear
+      target: Area
       group: Enemy
   passive: {}
   embed: {}
@@ -23,16 +24,16 @@ Sanctus:
       base: 1
       scale: 0
     Mana:
-      base: 5
-      scale: 3
-    Cooldown:
-      base: 1
+      base: 0
       scale: 0
-    Range:
-      base: 10
+    Cooldown:
+      base: 0
+      scale: 0
+    Radius:
+      base: 5
       scale: 0
     Damage:
-      base: 4
-      scale: 4
+      base: 6
+      scale: 6
   values: {}
   strings: {}

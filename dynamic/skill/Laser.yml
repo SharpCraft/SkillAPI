@@ -33,6 +33,6 @@ Laser:
       scale: 0
     Damage:
       base: 4
-      scale: 4
+      scale: 2
   values: {}
   strings: {}
