@@ -1,6 +1,6 @@
 # If you manually modify this file,
 # set loaded to false
-loaded: true
+loaded: false
 Prueba:
   prefix: Prueba
   max-level: 40
