@@ -1,0 +1,46 @@
+Revitalia:
+  type: Target AOE
+  indicator: Apple,0
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'regeneracion de salud'
+  message: 'regeneracioooooon!'
+  permissions: []
+  active:
+    m0:
+      effect: HOT
+      target: Target Area
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 2
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 10
+      scale: 10
+    Cooldown:
+      base: 30
+      scale: 10
+    Range:
+      base: 8
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Health Per Tick:
+      base: 3
+      scale: 3
+    Heal Duration:
+      base: 20
+      scale: 10
+    Heal Frequency:
+      base: 1
+      scale: 0
+  values: {}
+  strings: {}

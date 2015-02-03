@@ -1,0 +1,38 @@
+Cura:
+  type: Target
+  indicator: nether star,0
+  max-level: 3
+  needs-permission: false
+  description:
+  - '... cura... ¿que mas'
+  - 'quieres?'
+  message: 'Cura!'
+  permissions: []
+  active:
+    m0:
+      effect: Heal
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 4
+    Cooldown:
+      base: 10
+      scale: 5
+    Range:
+      base: 8
+      scale: 0
+    Heal:
+      base: 8
+      scale: 6
+  values: {}
+  strings: {}
