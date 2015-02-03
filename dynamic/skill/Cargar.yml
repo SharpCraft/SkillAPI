@@ -1,0 +1,55 @@
+Cargar:
+  type: Self
+  indicator: Wood Axe,0
+  max-level: 1
+  needs-permission: false
+  description:
+  - 'Carga hacia el objetivo'
+  - 'inflingiendo un corazón y'
+  - 'tu proxima habilidad'
+  - 'inflinge un punto más de'
+  - 'daño'
+  message: 'Cargas hacia el objetivo'
+  permissions: []
+  active:
+    m0:
+      effect: TeleportTarget
+      target: Linear
+      group: Enemy
+    m1:
+      effect: Damage
+      target: Linear
+      group: Enemy
+    m2:
+      effect: DamageBonus
+      target: Self
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 120
+      scale: 0
+    Range:
+      base: 7
+      scale: 0
+    Damage:
+      base: 2
+      scale: 2
+    Bonus:
+      base: 1
+      scale: 1
+    Bonus Duration:
+      base: 3
+      scale: 0
+  values: {}
+  strings: {}

@@ -1,0 +1,12 @@
+Guerrero:
+  prefix: '&2'
+  max-level: 30
+  health-base: 20
+  health-scale: 0
+  mana-base: 20
+  mana-scale: 0
+  profess-level: 25
+  needs-permission: true
+  permissions: []
+  skills:
+  - Cargar
