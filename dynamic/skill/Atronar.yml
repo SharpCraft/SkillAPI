@@ -1,7 +1,7 @@
 Atronar:
   type: Target AOE
-  indicator: Apple,0
-  max-level: 5
+  indicator: TNT,0
+  max-level: 1
   needs-permission: false
   description: []
   permissions: []

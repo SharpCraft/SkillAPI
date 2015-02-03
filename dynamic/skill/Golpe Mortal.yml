@@ -35,7 +35,7 @@ Golpe Mortal:
       base: 4
       scale: 0
     Damage:
-      base: 1
+      base: 2
       scale: 1
   values: {}
   strings: {}
