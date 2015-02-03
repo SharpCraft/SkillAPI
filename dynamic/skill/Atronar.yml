@@ -1,11 +1,26 @@
 Atronar:
-  type: Target AOE
+  type: Area
   indicator: TNT,0
   max-level: 1
   needs-permission: false
-  description: []
+  description:
+  - 'Aturde a varios objetivos'
+  - 'en un area de 4 bloques'
+  - 'durante 1.5/2 segundos.'
+  - 'Atronar también reduce la'
+  - 'velocidad de movimiento'
+  - 'un 50% durante 1 segundo.'
+  message: 'Lanzando Atronar'
   permissions: []
-  active: {}
+  active:
+    m0:
+      effect: Status
+      target: Area
+      group: Enemy
+    m1:
+      effect: Potion
+      target: Area
+      group: Enemy
   passive: {}
   embed: {}
   attributes:
@@ -14,12 +29,26 @@ Atronar:
       scale: 1
     Cost:
       base: 1
-      scale: 0
+      scale: 1
     Mana:
-      base: 0
-      scale: 0
+      base: 60
+      scale: 10
     Cooldown:
-      base: 0
+      base: 45
+      scale: 15
+    Radius:
+      base: 5
       scale: 0
-  values: {}
+    Length:
+      base: 15
+      scale: 5
+    Tier:
+      base: 1
+      scale: 0
+    Duration:
+      base: 1
+      scale: 0
+  values:
+    Status: 0
+    Type: 2
   strings: {}

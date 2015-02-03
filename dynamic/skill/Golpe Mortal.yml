@@ -16,6 +16,10 @@ Golpe Mortal:
       effect: Damage
       target: Target
       group: Enemy
+    m1:
+      effect: Potion
+      target: Target
+      group: Enemy
   passive: {}
   embed: {}
   attributes:
@@ -37,5 +41,12 @@ Golpe Mortal:
     Damage:
       base: 2
       scale: 1
-  values: {}
+    Tier:
+      base: 1
+      scale: 0
+    Duration:
+      base: 2
+      scale: 0
+  values:
+    Type: 2
   strings: {}
