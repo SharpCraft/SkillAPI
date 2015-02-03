@@ -6,9 +6,8 @@ Freedom:
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'Te libera del mal! ok no,'
-  - 'te elimina las restricciones'
-  - 'de movimiento o de ataque'
+  - 'Te elimina las restricciones'
+  - 'de movimiento o ataque'
   message: 'Freedooooooom!!!!!'
   permissions: []
   active:
@@ -32,7 +31,7 @@ Freedom:
       base: 20
       scale: 0
     Range:
-      base: 8
+      base: 10
       scale: 0
   values:
     Cleanse: 116

@@ -5,18 +5,20 @@ Coraza:
   skill-req: Antidoto
   skill-req-level: 1
   needs-permission: false
-  description: []
+  description:
+  - 'Te protege de cierto daño'
+  message: 'Coraza!'
   permissions: []
   active:
     m0:
-      effect: DamageReduction
+      effect: DamagePercent
       target: Target
       group: Ally
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 4
       scale: 1
     Cost:
       base: 1
@@ -28,13 +30,13 @@ Coraza:
       base: 30
       scale: 10
     Range:
-      base: 8
+      base: 10
+      scale: 10
+    Percent:
+      base: 25
+      scale: 25
+    Percent Duration:
+      base: 10
       scale: 0
-    Reduction:
-      base: 8
-      scale: 7
-    Reduction Duration:
-      base: 40
-      scale: 20
   values: {}
   strings: {}

@@ -1,5 +1,5 @@
 Vidamagi:
-  type: Target
+  type: Self
   indicator: golden apple,0
   max-level: 5
   skill-req: Cura
@@ -29,7 +29,7 @@ Vidamagi:
       scale: 3
     Cooldown:
       base: 10
-      scale: 0
+      scale: 1
     Period:
       base: 3
       scale: 0

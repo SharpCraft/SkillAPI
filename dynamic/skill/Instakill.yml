@@ -1,6 +1,6 @@
 Instakill:
   type: Target
-  indicator: golden Apple,1
+  indicator: diamond sword,0
   max-level: 1
   needs-permission: false
   description:

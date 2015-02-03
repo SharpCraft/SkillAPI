@@ -29,7 +29,7 @@ Cura:
       base: 10
       scale: 5
     Range:
-      base: 8
+      base: 10
       scale: 0
     Heal:
       base: 8

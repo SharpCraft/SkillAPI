@@ -2,6 +2,8 @@ Revitalia:
   type: Target AOE
   indicator: Apple,0
   max-level: 2
+  skill-req: Cura
+  skill-req-level: 1
   needs-permission: false
   description:
   - 'regeneracion de salud'
@@ -16,8 +18,8 @@ Revitalia:
   embed: {}
   attributes:
     Level:
-      base: 2
-      scale: 1
+      base: 4
+      scale: 4
     Cost:
       base: 1
       scale: 1
@@ -28,7 +30,7 @@ Revitalia:
       base: 30
       scale: 10
     Range:
-      base: 8
+      base: 10
       scale: 0
     Radius:
       base: 5

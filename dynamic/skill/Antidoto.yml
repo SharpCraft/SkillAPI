@@ -19,18 +19,18 @@ Antidoto:
   attributes:
     Level:
       base: 2
-      scale: 1
+      scale: 0
     Cost:
       base: 1
       scale: 0
     Mana:
-      base: 2
+      base: 4
       scale: 0
     Cooldown:
       base: 30
       scale: 0
     Range:
-      base: 20
+      base: 10
       scale: 0
     Tier:
       base: 0

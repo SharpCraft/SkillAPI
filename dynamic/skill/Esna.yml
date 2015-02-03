@@ -23,7 +23,7 @@ Esna:
   embed: {}
   attributes:
     Level:
-      base: 5
+      base: 6
       scale: 0
     Cost:
       base: 1
@@ -35,7 +35,7 @@ Esna:
       base: 30
       scale: 0
     Range:
-      base: 8
+      base: 10
       scale: 0
     Tier:
       base: 0
