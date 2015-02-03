@@ -16,7 +16,7 @@ Classes:
 Mana:
   enabled: true
   gain-freq: 1
-  gain-amount: 2
+  gain-amount: 1
 Skills:
   allow-downgrade: true
   tree-type: Requirement
