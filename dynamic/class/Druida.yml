@@ -5,7 +5,7 @@ Druida:
   health-scale: 1
   mana-base: 20
   mana-scale: 3
-  profess-level: 0
+  profess-level: 20
   needs-permission: false
   permissions: []
   skills:

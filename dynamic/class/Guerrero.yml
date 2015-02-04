@@ -5,7 +5,7 @@ Guerrero:
   health-scale: 1
   mana-base: 100
   mana-scale: 0
-  profess-level: 15
+  profess-level: 20
   needs-permission: true
   permissions: []
   skills:
