@@ -6,8 +6,8 @@ Antidoto:
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'Quita los efectos de veneno'
-  message: 'Has consumido un antídoto.'
+  - 'Elimina el estado veneno'
+  message: 'Antidoto!'
   permissions: []
   active:
     m0:

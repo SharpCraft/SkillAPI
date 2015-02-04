@@ -4,9 +4,9 @@ Cura:
   max-level: 3
   needs-permission: false
   description:
-  - 'Cura'
-  - 'Cura'
-  message: 'Cura'
+  - 'Restaura 4/6/8 a un'
+  - 'aliado'
+  message: 'Cura!'
   permissions: []
   active:
     m0:
@@ -26,8 +26,8 @@ Cura:
       base: 4
       scale: 4
     Cooldown:
-      base: 10
-      scale: 5
+      base: 16
+      scale: 7
     Range:
       base: 10
       scale: 0

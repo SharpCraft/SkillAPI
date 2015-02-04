@@ -4,8 +4,9 @@ Coraza:
   max-level: 2
   needs-permission: false
   description:
-  - 'Te protege de #dmg daño.'
-  message: 'Has aplicado tu coraza.'
+  - 'Te protege del 25/50% de'
+  - 'daño'
+  message: 'Coraza!'
   permissions: []
   active:
     m0:
@@ -34,7 +35,7 @@ Coraza:
       base: 25
       scale: 25
     Percent Duration:
-      base: 10
+      base: 5
       scale: 0
   values: {}
   strings: {}

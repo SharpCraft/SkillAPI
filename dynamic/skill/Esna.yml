@@ -4,7 +4,7 @@ Esna:
   max-level: 1
   needs-permission: false
   description:
-  - 'libera de cualquier'
+  - 'Libera de cualquier'
   - 'estado!'
   message: 'Esna!'
   permissions: []
@@ -39,8 +39,8 @@ Esna:
       base: 0
       scale: 0
     Duration:
-      base: 0
-      scale: 0
+      base: 5
+      scale: 2
   values:
     Cleanse: 255
     Type: 19

@@ -6,8 +6,9 @@ Vidamagi:
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'regeneras vida con el'
-  - 'paso en el tiempo'
+  - 'regeneras medio corazón'
+  - 'cada segundo durante'
+  - '5/8/11 segundos'
   message: 'vidamigi!'
   permissions: []
   active: {}
@@ -41,6 +42,6 @@ Vidamagi:
       scale: 3
     Passive Heal Frequency:
       base: 1
-      scale: 5
+      scale: 0
   values: {}
   strings: {}

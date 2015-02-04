@@ -6,7 +6,8 @@ Santificar:
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'Santifica toda una zona'
+  - 'Haces daño en area que'
+  - 'quita 2/3/4 corazones'
   message: 'Santificar'
   permissions: []
   active:
@@ -33,7 +34,7 @@ Santificar:
       base: 5
       scale: 0
     Damage:
-      base: 6
-      scale: 6
+      base: 4
+      scale: 2
   values: {}
   strings: {}

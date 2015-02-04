@@ -5,7 +5,8 @@ Laser:
   needs-permission: false
   description:
   - 'Atacas con el poder de la'
-  - 'luz'
+  - 'luz quitando 2/3/4'
+  - 'corazones'
   message: 'Laser!'
   permissions: []
   active:

@@ -6,7 +6,10 @@ Revitalia:
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'regeneracion de salud'
+  - 'Durante 20/30 segundos'
+  - 'los aliados en una area'
+  - 'recuperaran medio corazón'
+  - 'por segundo'
   message: 'regeneracioooooon!'
   permissions: []
   active:

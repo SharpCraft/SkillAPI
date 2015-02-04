@@ -31,7 +31,7 @@ Sacro:
       base: 20
       scale: 0
     Range:
-      base: 10
+      base: 8
       scale: 0
   values:
     Cleanse: 130
