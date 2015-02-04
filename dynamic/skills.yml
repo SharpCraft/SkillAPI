@@ -1,6 +1,359 @@
 # If you manually modify this file,
 # set loaded to false
 loaded: false
+#
+#
+#Guerrero
+#
+
+#
+#
+#Sacerdote
+#
+Vidamagi:
+  type: Self
+  indicator: golden apple,0
+  max-level: 3
+  skill-req: Cura
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'regeneras medio corazón'
+  - 'cada segundo durante'
+  - '5/8/11 segundos'
+  message: 'vidamigi!'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: HOT
+      target: Self
+      group: Ally
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 5
+      scale: 3
+    Cooldown:
+      base: 10
+      scale: 1
+    Period:
+      base: 3
+      scale: 0
+    Passive Health Per Tick:
+      base: 1
+      scale: 0
+    Passive Heal Duration:
+      base: 5
+      scale: 3
+    Passive Heal Frequency:
+      base: 1
+      scale: 0
+  values: {}
+  strings: {}
+
+Laser:
+  type: Linear
+  indicator: quartz,0
+  max-level: 3
+  needs-permission: false
+  description:
+  - 'Atacas con el poder de la'
+  - 'luz quitando 2/3/4'
+  - 'corazones'
+  message: 'Laser!'
+  permissions: []
+  active:
+    m0:
+      effect: Damage
+      target: Linear
+      group: Enemy
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 2
+      scale: 2
+    Cooldown:
+      base: 1
+      scale: 0
+    Range:
+      base: 10
+      scale: 0
+    Damage:
+      base: 4
+      scale: 2
+  values: {}
+  strings: {}
+
+Sacro:
+  type: Target
+  indicator: cookie,0
+  max-level: 1
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Te libera de maldiciones'
+  - 'y del fuego'
+  message: 'Sacro!'
+  permissions: []
+  active:
+    m0:
+      effect: Cleanse
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 3
+      scale: 0
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 0
+    Cooldown:
+      base: 20
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+  values:
+    Cleanse: 130
+  strings: {}
+
+Revitalia:
+  type: Target AOE
+  indicator: Apple,0
+  max-level: 2
+  skill-req: Cura
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Durante 20/30 segundos'
+  - 'los aliados en una area'
+  - 'recuperaran medio corazón'
+  - 'por segundo'
+  message: 'regeneracioooooon!'
+  permissions: []
+  active:
+    m0:
+      effect: HOT
+      target: Target Area
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 4
+      scale: 4
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 10
+      scale: 10
+    Cooldown:
+      base: 30
+      scale: 10
+    Range:
+      base: 10
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Health Per Tick:
+      base: 1
+      scale: 0
+    Heal Duration:
+      base: 20
+      scale: 10
+    Heal Frequency:
+      base: 1
+      scale: 0
+  values: {}
+  strings: {}
+Cura:
+  type: Target
+  indicator: nether star,0
+  max-level: 3
+  needs-permission: false
+  description:
+  - 'Restaura 4/6/8 a un'
+  - 'aliado'
+  message: 'Cura!'
+  permissions: []
+  active:
+    m0:
+      effect: Heal
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 4
+    Cooldown:
+      base: 16
+      scale: 7
+    Range:
+      base: 10
+      scale: 0
+    Heal:
+      base: 4
+      scale: 2
+  values: {}
+  strings: {}
+Antidoto:
+  type: Target
+  indicator: potion,0
+  max-level: 1
+  skill-req: Cura
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Elimina el estado veneno'
+  message: 'Antidoto!'
+  permissions: []
+  active:
+    m0:
+      effect: Potion
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 2
+      scale: 0
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 0
+    Cooldown:
+      base: 30
+      scale: 0
+    Range:
+      base: 10
+      scale: 0
+    Tier:
+      base: 0
+      scale: 0
+    Duration:
+      base: 5
+      scale: 2
+  values:
+    Type: 19
+  strings: {}
+Freedom:
+  type: Target
+  indicator: feather,0
+  max-level: 1
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Te elimina las restricciones'
+  - 'de movimiento o ataque'
+  message: 'Freedooooooom!!!!!'
+  permissions: []
+  active:
+    m0:
+      effect: Cleanse
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 3
+      scale: 0
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 0
+    Cooldown:
+      base: 20
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+  values:
+    Cleanse: 116
+  strings: {}
+
+ 
+ 
+
+Sacro:
+  type: Target
+  indicator: cookie,0
+  max-level: 1
+  skill-req: Antidoto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Te libera de maldiciones'
+  - 'y del fuego'
+  message: 'Sacro!'
+  permissions: []
+  active:
+    m0:
+      effect: Cleanse
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 3
+      scale: 0
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 4
+      scale: 0
+    Cooldown:
+      base: 20
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+  values:
+    Cleanse: 130
+  strings: {}
+
+#
+#
+#Asesino
+#
 Golpe siniestro:
   type: Target
   indicator: iron sword,0
