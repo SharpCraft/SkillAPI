@@ -13,7 +13,7 @@ Cargar:
   permissions: []
   active:
     m0:
-      effect: TeleportTarget
+      effect: Launch
       target: Linear
       group: Enemy
     m1:
@@ -23,7 +23,7 @@ Cargar:
     m2:
       effect: DamageBonus
       target: Self
-      group: Ally
+      group: Enemy
   passive: {}
   embed: {}
   attributes:
@@ -41,6 +41,12 @@ Cargar:
       scale: 0
     Range:
       base: 7
+      scale: 0
+    Vertical Speed:
+      base: 0
+      scale: 0
+    Horizontal Speed:
+      base: 3
       scale: 0
     Damage:
       base: 2

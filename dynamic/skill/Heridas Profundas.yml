@@ -1,46 +1,47 @@
-Embate:
+Heridas Profundas:
   type: Target
-  indicator: Diamond Hoe,0
-  max-level: 2
+  indicator: Ghast Tear,0
+  max-level: 5
   needs-permission: false
   description:
-  - 'Reduces la defensa del'
-  - 'objetivo un 50/60 %'
+  - 'Haces sangrar al objetivo'
+  - 'quitandole 0,5 corazones'
+  - 'de daño por segundo'
   - 'durante 5 segundos.'
-  message: 'Has lanzado Embate'
+  message: 'Lanzando Heridas Profundas'
   permissions: []
   active:
     m0:
-      effect: DefenseModifier
+      effect: DOT
       target: Target
       group: Enemy
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 10
       scale: 1
     Cost:
       base: 1
       scale: 1
     Mana:
-      base: 40
+      base: 20
       scale: 10
     Cooldown:
-      base: 180
-      scale: 20
+      base: 90
+      scale: 30
     Range:
       base: 8
       scale: 0
-    Modifier Duration:
-      base: 5
-      scale: 0
-    Attacks:
+    DOT Damage:
       base: 1
       scale: 0
-    Modifier Chance:
+    DOT Duration:
+      base: 5
+      scale: 0
+    DOT Frequency:
       base: 1
       scale: 0
   values:
-    Attack Type: 1
+    Lethal: 0
   strings: {}

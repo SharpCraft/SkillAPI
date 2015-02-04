@@ -1,5 +1,5 @@
 Sed de Sangre:
-  type: Self
+  type: Passive
   indicator: Skull,1
   max-level: 2
   needs-permission: false
