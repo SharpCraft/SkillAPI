@@ -5,6 +5,308 @@ loaded: false
 #
 #Guerrero
 #
+Sed de Sangre:
+  type: Self
+  indicator: Skull,1
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Sed de Sangre recorre tus'
+  - 'venas en busca de'
+  - 'venganza. Esta habilidad'
+  - 'provoca a los enemigos,'
+  - 'te ciega y aumenta tu'
+  - 'fuerza durante 5 segundos'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: AttackModifier
+      target: Self
+      group: Ally
+  embed:
+    m0:
+      effect: Taunt
+      target: Target
+      group: Enemy
+    m1:
+      effect: Potion
+      target: Self
+      group: Ally
+  attributes:
+    Level:
+      base: 5
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 10
+      scale: 10
+    Cooldown:
+      base: 300
+      scale: 0
+    Range:
+      base: 10
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Passive Modifier Duration:
+      base: 500
+      scale: 0
+    Passive Attacks:
+      base: 500
+      scale: 0
+    Passive Modifier Chance:
+      base: 5
+      scale: 5
+    Embed Tier:
+      base: 1
+      scale: 0
+    Embed Duration:
+      base: 5
+      scale: 0
+  values:
+    Attack Type: 1
+    Type: 15
+  strings: {}
+
+Regeneracion Iracunda:
+  type: Self
+  indicator: Potion,8193
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'La íra de tu interior te'
+  - 'permite regenerarte 4/8'
+  - 'corazones cada segundo'
+  - 'durante 5 segundos.'
+  message: 'Lanzar Regeneración Iracunda'
+  permissions: []
+  active:
+    m0:
+      effect: Potion
+      target: Self
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 100
+      scale: 0
+    Cooldown:
+      base: 90
+      scale: 30
+    Tier:
+      base: 1
+      scale: 1
+    Duration:
+      base: 5
+      scale: 0
+  values:
+    Type: 10
+  strings: {}
+
+Golpe Mortal:
+  type: Target
+  indicator: Gold Axe,0
+  max-level: 3
+  needs-permission: false
+  description:
+  - 'Un golpe feroz que'
+  - 'inflige 2/3/4 puntos de'
+  - 'daño físico y relentiza'
+  - 'al enemigo un 50% durante'
+  - '2 segundos.'
+  message: 'Lanzando Golpe Mortal'
+  permissions: []
+  active:
+    m0:
+      effect: Damage
+      target: Target
+      group: Enemy
+    m1:
+      effect: Potion
+      target: Target
+      group: Enemy
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 40
+      scale: 10
+    Cooldown:
+      base: 8
+      scale: 4
+    Range:
+      base: 4
+      scale: 0
+    Damage:
+      base: 2
+      scale: 1
+    Tier:
+      base: 1
+      scale: 0
+    Duration:
+      base: 3
+      scale: 0
+  values:
+    Type: 2
+  strings: {}
+
+Embate:
+  type: Target
+  indicator: Ghast tear,0
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Reduces la sanación del'
+  - 'objetivo un 50/60 %'
+  - 'durante 10 segundos.'
+  message: 'Has lanzado Embate'
+  permissions: []
+  active: {}
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 40
+      scale: 10
+    Cooldown:
+      base: 180
+      scale: 20
+  values: {}
+  strings: {}
+
+Cargar:
+  type: Self
+  indicator: Iron Sword,0
+  max-level: 1
+  needs-permission: false
+  description:
+  - 'Carga hacia el objetivo'
+  - 'infligiendo un corazón y'
+  - 'tu proxima habilidad'
+  - 'inflinge un punto más de'
+  - 'daño'
+  message: 'Cargas hacia el objetivo'
+  permissions: []
+  active:
+    m0:
+      effect: TeleportTarget
+      target: Linear
+      group: Enemy
+    m1:
+      effect: Damage
+      target: Linear
+      group: Enemy
+    m2:
+      effect: DamageBonus
+      target: Self
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 35
+      scale: 0
+    Cooldown:
+      base: 120
+      scale: 0
+    Range:
+      base: 7
+      scale: 0
+    Damage:
+      base: 2
+      scale: 2
+    Bonus:
+      base: 1
+      scale: 1
+    Bonus Duration:
+      base: 5
+      scale: 0
+  values: {}
+  strings: {}
+
+Atronar:
+  type: Area
+  indicator: TNT,0
+  max-level: 4
+  needs-permission: false
+  description:
+  - 'Aturde a varios objetivos'
+  - 'en un area de 4 bloques'
+  - 'durante 1.5/2 segundos.'
+  - 'Atronar también reduce la'
+  - 'velocidad de movimiento'
+  - 'un 50% durante 1 segundo.'
+  message: 'Lanzando Atronar'
+  permissions: []
+  active:
+    m0:
+      effect: Status
+      target: Area
+      group: Enemy
+    m1:
+      effect: Potion
+      target: Area
+      group: Enemy
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 5
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 60
+      scale: 10
+    Cooldown:
+      base: 45
+      scale: 15
+    Radius:
+      base: 4
+      scale: 0
+    Length:
+      base: 15
+      scale: 5
+    Tier:
+      base: 1
+      scale: 0
+    Duration:
+      base: 2
+      scale: 0
+  values:
+    Status: 0
+    Type: 2
+  strings: {}
 
 #
 #
