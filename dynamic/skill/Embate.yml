@@ -1,0 +1,29 @@
+Embate:
+  type: Target
+  indicator: Ghast tear,0
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Reduces la sanación del'
+  - 'objetivo un 50/60 %'
+  - 'durante 10 segundos.'
+  message: 'Has lanzado Embate'
+  permissions: []
+  active: {}
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 40
+      scale: 10
+    Cooldown:
+      base: 180
+      scale: 20
+  values: {}
+  strings: {}

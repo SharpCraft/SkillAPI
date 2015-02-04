@@ -1,0 +1,66 @@
+Sed de Sangre:
+  type: Self
+  indicator: Skull,1
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Sed de Sangre recorre tus'
+  - 'venas en busca de'
+  - 'venganza. Esta habilidad'
+  - 'provoca a los enemigos,'
+  - 'te ciega y aumenta tu'
+  - 'fuerza durante 5 segundos'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: AttackModifier
+      target: Self
+      group: Ally
+  embed:
+    m0:
+      effect: Taunt
+      target: Target
+      group: Enemy
+    m1:
+      effect: Potion
+      target: Self
+      group: Ally
+  attributes:
+    Level:
+      base: 5
+      scale: 1
+    Cost:
+      base: 1
+      scale: 1
+    Mana:
+      base: 10
+      scale: 10
+    Cooldown:
+      base: 300
+      scale: 0
+    Range:
+      base: 10
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Passive Modifier Duration:
+      base: 500
+      scale: 0
+    Passive Attacks:
+      base: 500
+      scale: 0
+    Passive Modifier Chance:
+      base: 5
+      scale: 5
+    Embed Tier:
+      base: 1
+      scale: 0
+    Embed Duration:
+      base: 5
+      scale: 0
+  values:
+    Attack Type: 1
+    Type: 15
+  strings: {}

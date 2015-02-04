@@ -1,14 +1,14 @@
 Regeneracion Iracunda:
   type: Self
   indicator: Potion,8193
-  max-level: 1
+  max-level: 2
   needs-permission: false
   description:
   - 'La íra de tu interior te'
   - 'permite regenerarte 4/8'
   - 'corazones cada segundo'
   - 'durante 5 segundos.'
-  message: 'Lanzas Regeneración Iracunda'
+  message: 'Lanzar Regeneración Iracunda'
   permissions: []
   active:
     m0:
