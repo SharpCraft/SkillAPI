@@ -8,7 +8,7 @@ Sacro:
   description:
   - 'Te libera de maldiciones'
   - 'y del fuego'
-  message: 'Sacro!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oSacro&r.'
   permissions: []
   active:
     m0:

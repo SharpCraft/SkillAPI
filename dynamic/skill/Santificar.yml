@@ -8,7 +8,7 @@ Santificar:
   description:
   - 'Haces daño en area que'
   - 'quita 2/3/4 corazones'
-  message: 'Santificar'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oSantificar&r.'
   permissions: []
   active:
     m0:

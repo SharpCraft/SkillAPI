@@ -7,7 +7,7 @@ Laser:
   - 'Atacas con el poder de la'
   - 'luz quitando 2/3/4'
   - 'corazones'
-  message: 'Laser!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oLaser&r.'
   permissions: []
   active:
     m0:

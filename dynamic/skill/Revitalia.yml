@@ -10,7 +10,7 @@ Revitalia:
   - 'los aliados en una area'
   - 'recuperaran medio corazón'
   - 'por segundo'
-  message: 'regeneracioooooon!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oRevitalia&r.'
   permissions: []
   active:
     m0:

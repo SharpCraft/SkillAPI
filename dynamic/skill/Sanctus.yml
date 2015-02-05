@@ -7,7 +7,7 @@ Sanctus:
   - 'Atacas con todo el poder'
   - 'de la luz quitando'
   - '3/4,5/6 corazones'
-  message: 'Sanctus!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oSanctus&r.'
   permissions: []
   active:
     m0:
@@ -33,7 +33,7 @@ Sanctus:
       base: 10
       scale: 0
     Damage:
-      base: 6
-      scale: 3
+      base: 4
+      scale: 2
   values: {}
   strings: {}

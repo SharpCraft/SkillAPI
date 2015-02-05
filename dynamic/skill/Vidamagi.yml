@@ -9,7 +9,7 @@ Vidamagi:
   - 'regeneras medio corazón'
   - 'cada segundo durante'
   - '5/8/11 segundos'
-  message: 'vidamigi!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oVidamagi&r.'
   permissions: []
   active: {}
   passive:
@@ -20,7 +20,7 @@ Vidamagi:
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 5
       scale: 1
     Cost:
       base: 1

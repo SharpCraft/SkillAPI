@@ -8,7 +8,7 @@ Escudo:
   description:
   - 'Protege de un 10% del'
   - 'daño'
-  message: 'Escudo!'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oEscudo&r.'
   permissions: []
   active: {}
   passive:
