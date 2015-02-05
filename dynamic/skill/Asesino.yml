@@ -1,0 +1,18 @@
+Asesino:
+  prefix: '&eA'
+  max-level: 20
+  health-base: 18
+  health-scale: 1
+  mana-base: 0
+  mana-scale: 0
+  profess-level: 20
+  needs-permission: false
+  permissions: []
+  skills:
+  - Golpe siniestro
+  - Sigilo
+  - Veneno mortal
+  - Heridas sangrantes
+  - Salto
+  - Velocidad del rayo
+  - Dagas rebotantes
