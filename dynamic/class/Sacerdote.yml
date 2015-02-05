@@ -5,7 +5,7 @@ Sacerdote:
   health-scale: 1
   mana-base: 20
   mana-scale: 3
-  profess-level: 20
+  profess-level: 15
   needs-permission: false
   permissions: []
   skills:
@@ -14,5 +14,9 @@ Sacerdote:
   - Antidoto
   - Freedom
   - Sacro
-  - Laser
+  - Purgar
   - Vidamagi
+  - Envenenar
+  - Incinerar
+  - Deseo
+  - Dispersion
