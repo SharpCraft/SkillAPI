@@ -1,0 +1,63 @@
+Veneno mortal:
+  type: Self
+  indicator: potion,8196
+  max-level: 3
+  skill-req: Sigilo
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Envenena tu arma, lo que'
+  - 'hace que tus ataques'
+  - 'físicos apliquen veneno I'
+  - 'al objetivo durante'
+  - '5/10/15 segundos con una'
+  - 'probabilidad del'
+  - '80/85/90%.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oVeneno mortal&r.'
+  permissions: []
+  active:
+    m0:
+      effect: AttackModifier
+      target: Self
+      group: Ally
+  passive: {}
+  embed:
+    m0:
+      effect: Potion
+      target: Target
+      group: Enemy
+  attributes:
+    Level:
+      base: 4
+      scale: 2
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 60
+      scale: 20
+    Range:
+      base: 8
+      scale: 0
+    Modifier Duration:
+      base: 5
+      scale: 5
+    Attacks:
+      base: 30
+      scale: 0
+    Modifier Chance:
+      base: 80
+      scale: 5
+    Embed Tier:
+      base: 1
+      scale: 0
+    Embed Duration:
+      base: 5
+      scale: 2
+  values:
+    Attack Type: 1
+    Type: 19
+  strings: {}

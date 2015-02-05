@@ -1,0 +1,57 @@
+Salto:
+  type: Linear
+  indicator: Feather,0
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'ACTIVA: Das un potente'
+  - 'salto hacia adelante. -'
+  - 'PASIVA: Te otorga Salto'
+  - 'I.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oSalto&r.'
+  permissions: []
+  active:
+    m0:
+      effect: Launch
+      target: Self
+      group: Ally
+  passive:
+    m0:
+      effect: Potion
+      target: Area
+      group: Enemy
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 2
+      scale: 1
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 10
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Vertical Speed:
+      base: 3
+      scale: 2
+    Horizontal Speed:
+      base: 5
+      scale: 2
+    Passive Tier:
+      base: 1
+      scale: 0
+    Passive Duration:
+      base: 1
+      scale: 0
+  values:
+    Type: 8
+  strings: {}

@@ -1,0 +1,52 @@
+Heridas sangrantes:
+  type: Passive
+  indicator: redstone,0
+  max-level: 5
+  skill-req: Sigilo
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Tus golpes físicos tienen'
+  - 'un 15/20/25/30/35% de'
+  - 'probabilidad de hacer'
+  - 'sangrar al enemigo,'
+  - 'infligiendo 1 punto de'
+  - 'daño por segundo durante'
+  - '3/5/7/9/11 segundos.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oHeridas sangrantes&r.'
+  permissions: []
+  active: {}
+  passive:
+    m0:
+      effect: AttackModifier
+      target: Self
+      group: Ally
+  embed: {}
+  attributes:
+    Level:
+      base: 3
+      scale: 2
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 0
+      scale: 0
+    Period:
+      base: 3
+      scale: 0
+    Passive Modifier Duration:
+      base: 999
+      scale: 0
+    Passive Attacks:
+      base: 999
+      scale: 0
+    Passive Modifier Chance:
+      base: 15
+      scale: 5
+  values:
+    Attack Type: 1
+  strings: {}

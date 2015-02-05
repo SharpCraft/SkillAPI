@@ -1,0 +1,53 @@
+Velocidad del rayo:
+  type: Target
+  indicator: shears,0
+  max-level: 1
+  skill-req: Salto
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Te mueves a velocidad del'
+  - 'rayo hacia el objetivo y'
+  - 'te preparas para dar un'
+  - 'golpe por la espalda, por'
+  - 'lo que tu próximo ataque'
+  - 'inflige 6 puntos de daño'
+  - 'extra si lo haces antes'
+  - 'de 5 segundos.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oVelocidad del rayo&r.'
+  permissions: []
+  active:
+    m0:
+      effect: TeleportTarget
+      target: Target
+      group: Enemy
+    m1:
+      effect: DamageBonus
+      target: Self
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 20
+      scale: 0
+    Cost:
+      base: 3
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 150
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+    Bonus:
+      base: 6
+      scale: 0
+    Bonus Duration:
+      base: 5
+      scale: 0
+  values: {}
+  strings: {}

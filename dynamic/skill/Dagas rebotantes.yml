@@ -1,0 +1,55 @@
+Dagas rebotantes:
+  type: Target AOE
+  indicator: iron sword,0
+  max-level: 1
+  skill-req: Golpe siniestro
+  skill-req-level: 1
+  needs-permission: false
+  description:
+  - 'Lanzas una daga hacia el'
+  - 'objetivo, que inflige 12'
+  - 'puntos de daño y luego'
+  - 'rebota infligiendo 8'
+  - 'puntos de daño a los'
+  - 'enemigos cercanos al'
+  - 'objetivo.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oDagas rebotantes&r.'
+  permissions: []
+  active:
+    m0:
+      effect: Damage
+      target: Target
+      group: Enemy
+    m1:
+      effect: Damage
+      target: Target Area
+      group: Enemy
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 20
+      scale: 0
+    Cost:
+      base: 3
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 150
+      scale: 0
+    Range:
+      base: 8
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Target Damage:
+      base: 12
+      scale: 0
+    Target Area Damage:
+      base: 8
+      scale: 2
+  values: {}
+  strings: {}
