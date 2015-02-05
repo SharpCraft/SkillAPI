@@ -1,0 +1,48 @@
+Dispersion:
+  type: Target
+  indicator: Apple,0
+  max-level: 1
+  needs-permission: false
+  description:
+  - 'Reduce el daño recivido'
+  - 'al 100% pero te mantiene'
+  - 'completamente inmovil'
+  - 'durante 5 segundos.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oDispersion&r.'
+  permissions: []
+  active:
+    m0:
+      effect: DamagePercentReduction
+      target: Self
+      group: Ally
+    m1:
+      effect: Status
+      target: Self
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 20
+      scale: 0
+    Cost:
+      base: 2
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 0
+      scale: 0
+    Percent Reduction:
+      base: 100
+      scale: 0
+    Percent Reduction Duration:
+      base: 5
+      scale: 0
+    Length:
+      base: 3
+      scale: 1
+  values:
+    Status: 0
+  strings: {}

@@ -1,26 +1,28 @@
-SHIELD:
+Incinerar:
   type: Target
-  indicator: iron door,0
+  indicator: fire,0
   max-level: 1
+  skill-req: Envenenar
+  skill-req-level: 1
   needs-permission: false
   description:
-  - 'protegere mi escudo...'
-  - 'CON OTRO ESCUDO!'
-  message: 'nop admin, es mi protegido'
+  - 'Quemas al enemigo durante'
+  - '15 segundos.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oIncinerar&r.'
   permissions: []
   active:
     m0:
-      effect: DamageReduction
-      target: Self
-      group: All
+      effect: Fire
+      target: Target
+      group: Enemy
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 9
       scale: 0
     Cost:
-      base: 0
+      base: 1
       scale: 0
     Mana:
       base: 0
@@ -28,11 +30,11 @@ SHIELD:
     Cooldown:
       base: 0
       scale: 0
-    Reduction:
-      base: 7777
+    Range:
+      base: 8
       scale: 0
-    Reduction Duration:
-      base: 5
+    Fire:
+      base: 15
       scale: 0
   values: {}
   strings: {}
