@@ -45,7 +45,7 @@ Golpe Mortal:
       base: 1
       scale: 0
     Duration:
-      base: 3
+      base: 5
       scale: 0
   values:
     Type: 2

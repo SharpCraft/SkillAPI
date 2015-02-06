@@ -53,7 +53,7 @@ Intervencion:
       base: 255
       scale: 0
     Duration:
-      base: 4
+      base: 5
       scale: 2
   values:
     Type: 11

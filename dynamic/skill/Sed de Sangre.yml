@@ -10,6 +10,7 @@ Sed de Sangre:
   - 'provoca a los enemigos,'
   - 'te ciega y aumenta tu'
   - 'fuerza durante 5 segundos'
+  message: 'Lanzando Sed de Sangre'
   permissions: []
   active: {}
   passive:
@@ -34,8 +35,8 @@ Sed de Sangre:
       base: 1
       scale: 1
     Mana:
-      base: 10
-      scale: 10
+      base: 0
+      scale: 0
     Cooldown:
       base: 300
       scale: 0
@@ -59,7 +60,7 @@ Sed de Sangre:
       scale: 0
     Embed Duration:
       base: 5
-      scale: 0
+      scale: 2
   values:
     Attack Type: 1
     Type: 15

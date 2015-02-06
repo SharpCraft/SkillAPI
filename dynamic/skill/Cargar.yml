@@ -9,12 +9,12 @@ Cargar:
   - 'tu proxima habilidad'
   - 'inflinge un punto más de'
   - 'daño'
-  message: 'Cargas hacia el objetivo'
+  message: 'Lanzando Cargar'
   permissions: []
   active:
     m0:
       effect: Launch
-      target: Linear
+      target: Self
       group: Enemy
     m1:
       effect: Damage

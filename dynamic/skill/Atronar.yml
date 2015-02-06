@@ -31,7 +31,7 @@ Atronar:
       base: 1
       scale: 1
     Mana:
-      base: 60
+      base: 50
       scale: 10
     Cooldown:
       base: 45
@@ -46,7 +46,7 @@ Atronar:
       base: 1
       scale: 0
     Duration:
-      base: 2
+      base: 3
       scale: 0
   values:
     Status: 0

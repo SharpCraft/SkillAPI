@@ -7,7 +7,7 @@ Embate:
   - 'Reduces la defensa del'
   - 'objetivo un 50/60 %'
   - 'durante 5 segundos.'
-  message: 'Has lanzado Embate'
+  message: 'Lanzando Embate'
   permissions: []
   active:
     m0:

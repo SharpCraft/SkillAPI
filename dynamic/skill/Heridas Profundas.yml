@@ -1,7 +1,7 @@
 Heridas Profundas:
   type: Target
   indicator: Ghast Tear,0
-  max-level: 5
+  max-level: 1
   needs-permission: false
   description:
   - 'Haces sangrar al objetivo'
@@ -25,7 +25,7 @@ Heridas Profundas:
       base: 1
       scale: 1
     Mana:
-      base: 20
+      base: 30
       scale: 10
     Cooldown:
       base: 90
