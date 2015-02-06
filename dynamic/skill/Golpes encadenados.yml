@@ -1,14 +1,14 @@
-Golpe siniestro:
+Golpes encadenados:
   type: Target
   indicator: iron sword,0
   max-level: 2
   needs-permission: false
   description:
-  - 'Das un golpe siniestro'
-  - 'que inflige 10/14 de daño'
-  - 'inmediatamente y luego'
-  - '1/2 cada segundo durante'
-  - '3 segundos.'
+  - 'Atacas con golpes'
+  - 'múltiples, que inflige'
+  - '10/14 de daño inmediatamente'
+  - 'y luego 1/2 cada segundo'
+  - 'durante 3 segundos.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oGolpe siniestro&r.'
   permissions: []
   active:

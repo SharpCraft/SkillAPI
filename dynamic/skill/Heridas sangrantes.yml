@@ -21,7 +21,11 @@ Heridas sangrantes:
       effect: AttackModifier
       target: Self
       group: Ally
-  embed: {}
+  embed:
+    m0:
+      effect: DOT
+      target: Target
+      group: Enemy
   attributes:
     Level:
       base: 3
@@ -35,6 +39,9 @@ Heridas sangrantes:
     Cooldown:
       base: 0
       scale: 0
+    Range:
+      base: 8
+      scale: 0
     Period:
       base: 3
       scale: 0
@@ -47,6 +54,16 @@ Heridas sangrantes:
     Passive Modifier Chance:
       base: 15
       scale: 5
+    Embed DOT Damage:
+      base: 1
+      scale: 0
+    Embed DOT Duration:
+      base: 3
+      scale: 2
+    Embed DOT Frequency:
+      base: 1
+      scale: 0
   values:
     Attack Type: 1
+    Lethal: 0
   strings: {}

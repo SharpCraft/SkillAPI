@@ -9,7 +9,7 @@ Asesino:
   needs-permission: false
   permissions: []
   skills:
-  - Golpe siniestro
+  - Golpes encadenados
   - Sigilo
   - Veneno mortal
   - Heridas sangrantes

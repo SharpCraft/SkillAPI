@@ -2,8 +2,6 @@ Dagas rebotantes:
   type: Target AOE
   indicator: iron sword,0
   max-level: 1
-  skill-req: Golpe siniestro
-  skill-req-level: 1
   needs-permission: false
   description:
   - 'Lanzas una daga hacia el'
@@ -46,10 +44,10 @@ Dagas rebotantes:
       base: 5
       scale: 0
     Target Damage:
-      base: 12
-      scale: 0
+      base: 4
+      scale: 2
     Target Area Damage:
-      base: 8
+      base: 4
       scale: 2
   values: {}
   strings: {}

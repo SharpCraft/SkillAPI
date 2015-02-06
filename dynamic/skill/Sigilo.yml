@@ -35,8 +35,8 @@ Sigilo:
       base: 1
       scale: 0
     Duration:
-      base: 25
-      scale: 25
+      base: 5
+      scale: 2
   values:
     Type: 494
   strings: {}
