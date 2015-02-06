@@ -9,16 +9,16 @@ Golpes encadenados:
   - '10/14 de daño inmediatamente'
   - 'y luego 1/2 cada segundo'
   - 'durante 3 segundos.'
-  message: '&5&lHabilidades >> &r&oHas usado &d&l&oGolpe siniestro&r.'
+  message: '&5&lHabilidades >> &r&oHas usado &d&l&oGolpes encadenados&r.'
   permissions: []
   active:
     m0:
       effect: Damage
-      target: Target
+      target: Area
       group: Enemy
     m1:
       effect: DOT
-      target: Target
+      target: Area
       group: Enemy
   passive: {}
   embed: {}
@@ -35,12 +35,12 @@ Golpes encadenados:
     Cooldown:
       base: 30
       scale: 0
-    Range:
-      base: 8
+    Radius:
+      base: 5
       scale: 0
     Damage:
-      base: 1
-      scale: 1
+      base: 10
+      scale: 4
     DOT Damage:
       base: 1
       scale: 1
@@ -51,5 +51,5 @@ Golpes encadenados:
       base: 1
       scale: 0
   values:
-    Lethal: 1
+    Lethal: 0
   strings: {}

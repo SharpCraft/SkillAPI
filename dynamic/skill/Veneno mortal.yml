@@ -10,23 +10,17 @@ Veneno mortal:
   - 'hace que tus ataques'
   - 'físicos apliquen veneno I'
   - 'al objetivo durante'
-  - '5/10/15 segundos con una'
-  - 'probabilidad del'
-  - '80/85/90%. Dura 30'
+  - '5/10/15 segundos. Dura 30'
   - 'segundos.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oVeneno mortal&r.'
   permissions: []
   active:
     m0:
-      effect: AttackModifier
-      target: Self
-      group: Ally
-  passive: {}
-  embed:
-    m0:
       effect: Potion
       target: Target
       group: Enemy
+  passive: {}
+  embed: {}
   attributes:
     Level:
       base: 4
@@ -43,22 +37,12 @@ Veneno mortal:
     Range:
       base: 8
       scale: 0
-    Modifier Duration:
-      base: 30
-      scale: 5
-    Attacks:
-      base: 30
-      scale: 0
-    Modifier Chance:
-      base: 80
-      scale: 5
-    Embed Tier:
+    Tier:
       base: 1
       scale: 0
-    Embed Duration:
+    Duration:
       base: 5
       scale: 2
   values:
-    Attack Type: 1
     Type: 19
   strings: {}

@@ -25,6 +25,10 @@ Velocidad del rayo:
       effect: DamageBonus
       target: Self
       group: Ally
+    m2:
+      effect: Potion
+      target: Self
+      group: Ally
   passive: {}
   embed: {}
   attributes:
@@ -49,5 +53,12 @@ Velocidad del rayo:
     Bonus Duration:
       base: 5
       scale: 0
-  values: {}
+    Tier:
+      base: 1
+      scale: 0
+    Duration:
+      base: 5
+      scale: 0
+  values:
+    Type: 15
   strings: {}

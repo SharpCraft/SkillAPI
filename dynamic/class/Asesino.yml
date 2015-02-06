@@ -1,5 +1,5 @@
 Asesino:
-  prefix: '&eA'
+  prefix: '&eAsesino'
   max-level: 20
   health-base: 18
   health-scale: 1
