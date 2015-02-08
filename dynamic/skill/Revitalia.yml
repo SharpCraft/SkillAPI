@@ -9,7 +9,7 @@ Revitalia:
   - 'Durante 20/30 segundos'
   - 'los aliados en una area'
   - 'recuperaran medio corazón'
-  - 'por segundo'
+  - 'por segundo.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oRevitalia&r.'
   permissions: []
   active:

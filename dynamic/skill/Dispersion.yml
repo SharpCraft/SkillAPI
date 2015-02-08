@@ -1,6 +1,6 @@
 Dispersion:
   type: Target
-  indicator: Apple,0
+  indicator: iron block,0
   max-level: 1
   needs-permission: false
   description:
@@ -32,7 +32,7 @@ Dispersion:
       base: 0
       scale: 0
     Cooldown:
-      base: 0
+      base: 60
       scale: 0
     Percent Reduction:
       base: 100

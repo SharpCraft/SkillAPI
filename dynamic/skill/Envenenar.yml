@@ -26,7 +26,7 @@ Envenenar:
       base: 0
       scale: 0
     Cooldown:
-      base: 0
+      base: 30
       scale: 0
     Range:
       base: 8
@@ -35,8 +35,8 @@ Envenenar:
       base: 1
       scale: 0
     Duration:
-      base: 10
-      scale: 0
+      base: 5
+      scale: 2
   values:
     Type: 19
   strings: {}

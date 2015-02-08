@@ -28,13 +28,13 @@ Incinerar:
       base: 0
       scale: 0
     Cooldown:
-      base: 0
+      base: 35
       scale: 0
     Range:
       base: 8
       scale: 0
     Fire:
-      base: 15
-      scale: 0
+      base: 5
+      scale: 2
   values: {}
   strings: {}

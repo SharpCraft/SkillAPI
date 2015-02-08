@@ -1,13 +1,13 @@
 Escudo:
-  type: Target
+  type: Passive
   indicator: eye of ender,0
   max-level: 1
   skill-req: Coraza
   skill-req-level: 1
   needs-permission: false
   description:
-  - 'Protege de un 10% del'
-  - 'daño'
+  - 'Te protege de un 10% del'
+  - 'daño.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oEscudo&r.'
   permissions: []
   active: {}
@@ -28,7 +28,7 @@ Escudo:
       base: 0
       scale: 0
     Cooldown:
-      base: 0
+      base: 10
       scale: 0
     Period:
       base: 3
@@ -37,7 +37,7 @@ Escudo:
       base: 10
       scale: 0
     Passive Percent Reduction Duration:
-      base: 60
+      base: 5
       scale: 0
   values: {}
   strings: {}

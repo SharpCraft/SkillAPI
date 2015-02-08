@@ -4,9 +4,9 @@ SHIELD:
   max-level: 1
   needs-permission: false
   description:
-  - 'protegere mi escudo...'
+  - 'Protegere mi escudo...'
   - 'CON OTRO ESCUDO!'
-  message: 'nop admin, es mi protegido'
+  message: 'Nop admin, es mi protegido.'
   permissions: []
   active:
     m0:

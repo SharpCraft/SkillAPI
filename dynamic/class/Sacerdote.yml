@@ -1,5 +1,5 @@
 Sacerdote:
-  prefix: '&fSac'
+  prefix: '&fSacerdote'
   max-level: 20
   health-base: 15
   health-scale: 1

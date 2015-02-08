@@ -5,13 +5,18 @@ Coraza:
   needs-permission: false
   description:
   - 'Te protege del 25/50% de'
-  - 'daño'
+  - 'daño a un aliado y a ti'
+  - 'durante 10 segundos.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oCoraza&r.'
   permissions: []
   active:
     m0:
-      effect: DamagePercent
+      effect: DamageReduction
       target: Target
+      group: Ally
+    m1:
+      effect: DamageReduction
+      target: Self
       group: Ally
   passive: {}
   embed: {}
@@ -31,11 +36,17 @@ Coraza:
     Range:
       base: 10
       scale: 10
-    Percent:
+    Target Reduction:
       base: 25
       scale: 25
-    Percent Duration:
-      base: 5
+    Target Reduction Duration:
+      base: 10
+      scale: 0
+    Self Reduction:
+      base: 25
+      scale: 25
+    Self Reduction Duration:
+      base: 10
       scale: 0
   values: {}
   strings: {}

@@ -1,5 +1,5 @@
 Antidoto:
-  type: Target
+  type: Self
   indicator: potion,0
   max-level: 1
   skill-req: Cura
@@ -7,12 +7,17 @@ Antidoto:
   needs-permission: false
   description:
   - 'Elimina el estado veneno'
+  - 'a un aliado y a ti.'
   message: '&5&lHabilidades >> &r&oHas usado &d&l&oAntidoto&r.'
   permissions: []
   active:
     m0:
       effect: Potion
       target: Target
+      group: Ally
+    m1:
+      effect: Potion
+      target: Self
       group: Ally
   passive: {}
   embed: {}
@@ -32,10 +37,16 @@ Antidoto:
     Range:
       base: 10
       scale: 0
-    Tier:
+    Target Tier:
       base: 0
       scale: 0
-    Duration:
+    Target Duration:
+      base: 5
+      scale: 2
+    Self Tier:
+      base: 0
+      scale: 0
+    Self Duration:
       base: 5
       scale: 2
   values:

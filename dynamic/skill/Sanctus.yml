@@ -27,13 +27,13 @@ Sanctus:
       base: 5
       scale: 3
     Cooldown:
-      base: 1
+      base: 12
       scale: 0
     Range:
       base: 10
       scale: 0
     Damage:
-      base: 6
-      scale: 4
+      base: 4
+      scale: 2
   values: {}
   strings: {}
