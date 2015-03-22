@@ -1,5 +1,5 @@
-Sed de Sangre:
-  type: Passive
+Sed de sangre:
+  type: Self
   indicator: Skull,1
   max-level: 2
   needs-permission: false
@@ -9,59 +9,39 @@ Sed de Sangre:
   - 'venganza. Esta habilidad'
   - 'provoca a los enemigos,'
   - 'te ciega y aumenta tu'
-  - 'fuerza durante 5 segundos'
-  message: 'Lanzando Sed de Sangre'
+  - 'fuerza durante 4/5'
+  - 'segundos'
   permissions: []
-  active: {}
-  passive:
-    m0:
-      effect: AttackModifier
-      target: Self
-      group: Ally
-  embed:
+  active:
     m0:
       effect: Taunt
-      target: Target
+      target: Cone
       group: Enemy
     m1:
       effect: Potion
       target: Self
       group: Ally
+  passive: {}
+  embed: {}
   attributes:
     Level:
       base: 5
       scale: 1
     Cost:
       base: 1
-      scale: 1
+      scale: 0
     Mana:
-      base: 0
-      scale: 0
+      base: 40
+      scale: 10
     Cooldown:
-      base: 300
-      scale: 0
-    Range:
-      base: 10
-      scale: 0
-    Period:
-      base: 3
-      scale: 0
-    Passive Modifier Duration:
-      base: 500
-      scale: 0
-    Passive Attacks:
-      base: 500
-      scale: 0
-    Passive Modifier Chance:
-      base: 5
-      scale: 5
-    Embed Tier:
+      base: 40
+      scale: 10
+    Tier:
       base: 1
-      scale: 0
-    Embed Duration:
-      base: 5
-      scale: 2
+      scale: 1
+    Duration:
+      base: 4
+      scale: 1
   values:
-    Attack Type: 1
-    Type: 15
+    Type: 485
   strings: {}

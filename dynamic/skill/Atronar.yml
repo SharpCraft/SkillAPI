@@ -5,12 +5,12 @@ Atronar:
   needs-permission: false
   description:
   - 'Aturde a varios objetivos'
-  - 'en un area de 4 bloques'
-  - 'durante 1.5/2 segundos.'
-  - 'Atronar también reduce la'
-  - 'velocidad de movimiento'
-  - 'un 50% durante 1 segundo.'
-  message: 'Lanzando Atronar'
+  - 'en un area de 1/2/3/4'
+  - 'bloques durante 0.5/1/1.5/2'
+  - 'segundos. Atronar también'
+  - 'reduce la velocidad de'
+  - 'movimiento durante 1'
+  - 'segundo.'
   permissions: []
   active:
     m0:
@@ -29,24 +29,24 @@ Atronar:
       scale: 1
     Cost:
       base: 1
-      scale: 1
+      scale: 0
     Mana:
       base: 50
       scale: 10
     Cooldown:
-      base: 45
-      scale: 15
+      base: 55
+      scale: 5
     Radius:
-      base: 4
-      scale: 0
+      base: 1
+      scale: 1
     Length:
-      base: 15
+      base: 5
       scale: 5
     Tier:
       base: 1
       scale: 0
     Duration:
-      base: 3
+      base: 1
       scale: 0
   values:
     Status: 0

@@ -1,0 +1,45 @@
+Renovar:
+  type: Target
+  indicator: Potion,8201
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Te cura ati y a tu aliado'
+  - 'el 25/35% de la vida.'
+  permissions: []
+  active:
+    m0:
+      effect: HealPercent
+      target: Self
+      group: Ally
+    m1:
+      effect: HealPercent
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 15
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 90
+      scale: 10
+    Cooldown:
+      base: 24
+      scale: 2
+    Range:
+      base: 4
+      scale: 0
+    Self Heal Percent:
+      base: 25
+      scale: 10
+    Target Heal Percent:
+      base: 25
+      scale: 10
+  values:
+    HealType: 1
+  strings: {}

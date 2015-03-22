@@ -1,7 +1,7 @@
 Guerrero:
   prefix: '&2Guerrero'
   max-level: 20
-  health-base: 22
+  health-base: 16
   health-scale: 1
   mana-base: 100
   mana-scale: 0
@@ -9,11 +9,13 @@ Guerrero:
   needs-permission: true
   permissions: []
   skills:
-  - Cargar
-  - Golpe Mortal
-  - Atronar
-  - Regeneracion Iracunda
-  - Sed de Sangre
+  - Sed de sangre
+  - Regeneracion iracunda
+  - Golpe mortal
   - Embate
-  - Intervencion
-  - Heridas Profundas
+  - Cargar
+  - Atronar
+  - Heridas profundas
+  - Vigilancia
+  - Barrera de escudos
+  - Filotormenta

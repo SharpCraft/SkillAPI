@@ -1,0 +1,39 @@
+Tiempo prestado:
+  type: Area
+  indicator: Watch,0
+  max-level: 1
+  needs-permission: false
+  description:
+  - 'Paras el tiempo durante 5'
+  - 'segundos en un radio de'
+  - '10 bloques.'
+  permissions: []
+  active:
+    m0:
+      effect: Status
+      target: Area
+      group: All
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 20
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 150
+      scale: 0
+    Cooldown:
+      base: 80
+      scale: 0
+    Radius:
+      base: 5
+      scale: 0
+    Length:
+      base: 5
+      scale: 1
+  values:
+    Status: 0
+  strings: {}

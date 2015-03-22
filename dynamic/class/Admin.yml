@@ -1,14 +1,11 @@
 Admin:
   prefix: '&c&lAdmin'
   max-level: 1
-  health-base: 100
-  health-scale: 100
-  mana-base: 200
-  mana-scale: 150
+  health-base: 0
+  health-scale: 0
+  mana-base: 0
+  mana-scale: 0
   profess-level: 1
   needs-permission: true
   permissions: []
-  skills:
-  - Instakill
-  - Pentarina
-  - SHIELD
+  skills: []

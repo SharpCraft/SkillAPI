@@ -1,22 +1,16 @@
-Golpe mortal:
+Punicion:
   type: Target
   indicator: Gold Axe,0
   max-level: 3
   needs-permission: false
   description:
-  - 'Un golpe feroz que'
-  - 'inflige 8/10/12 puntos de'
-  - 'daño físico y relentiza'
-  - 'al enemigo durante 3/4/5'
-  - 'segundos.'
+  - 'Lanzas un golpe de luz'
+  - 'que inflige 8/10/12 de'
+  - 'daño.'
   permissions: []
   active:
     m0:
       effect: Damage
-      target: Target
-      group: Enemy
-    m1:
-      effect: Potion
       target: Target
       group: Enemy
   passive: {}
@@ -29,23 +23,16 @@ Golpe mortal:
       base: 1
       scale: 0
     Mana:
-      base: 20
+      base: 60
       scale: 10
     Cooldown:
-      base: 8
+      base: 12
       scale: 2
     Range:
-      base: 2
-      scale: 1
+      base: 7
+      scale: 0
     Damage:
       base: 8
       scale: 2
-    Tier:
-      base: 1
-      scale: 0
-    Duration:
-      base: 5
-      scale: 2
-  values:
-    Type: 2
+  values: {}
   strings: {}

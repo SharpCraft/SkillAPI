@@ -1,0 +1,36 @@
+Purificar:
+  type: Target
+  indicator: Apple,0
+  max-level: 2
+  needs-permission: false
+  description:
+  - 'Cura 12/14 a un aliado.'
+  permissions: []
+  active:
+    m0:
+      effect: Heal
+      target: Target
+      group: Ally
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 40
+      scale: 20
+    Cooldown:
+      base: 8
+      scale: 4
+    Range:
+      base: 5
+      scale: 0
+    Heal:
+      base: 12
+      scale: 2
+  values: {}
+  strings: {}

@@ -1,51 +1,49 @@
-Golpe mortal:
+Vigilancia:
   type: Target
-  indicator: Gold Axe,0
-  max-level: 3
+  indicator: Gold Chestplate,0
+  max-level: 2
   needs-permission: false
   description:
-  - 'Un golpe feroz que'
-  - 'inflige 8/10/12 puntos de'
-  - 'daño físico y relentiza'
-  - 'al enemigo durante 3/4/5'
-  - 'segundos.'
+  - 'Corres en defensa de un'
+  - 'aliado proporcionando un'
+  - 'escudo ati y al aliado'
+  - 'que reduce todos los'
+  - 'tipos de daño durante 4/6'
+  - 'segundos'
   permissions: []
   active:
     m0:
-      effect: Damage
+      effect: TeleportTarget
       target: Target
-      group: Enemy
+      group: Ally
     m1:
       effect: Potion
       target: Target
-      group: Enemy
+      group: Ally
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 10
       scale: 1
     Cost:
       base: 1
       scale: 0
     Mana:
-      base: 20
+      base: 60
       scale: 10
     Cooldown:
-      base: 8
-      scale: 2
+      base: 60
+      scale: 30
     Range:
-      base: 2
-      scale: 1
-    Damage:
-      base: 8
+      base: 4
       scale: 2
     Tier:
-      base: 1
+      base: 255
       scale: 0
     Duration:
       base: 5
       scale: 2
   values:
-    Type: 2
+    Type: 11
   strings: {}

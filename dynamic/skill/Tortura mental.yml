@@ -1,42 +1,42 @@
-Heridas profundas:
-  type: Target
-  indicator: Ghast tear,0
-  max-level: 1
+Tortura mental:
+  type: Linear
+  indicator: Skull,3
+  max-level: 2
   needs-permission: false
   description:
-  - 'Haces sangrar al objetivo'
-  - 'inflingiendo 4 corazones'
-  - 'de daño cada segundo'
-  - 'durante 5 segundos'
+  - 'Lanzas un rayo oscuro que'
+  - 'inflige 4/6 de daño cada'
+  - 'segundo durante 4'
+  - 'segundos.'
   permissions: []
   active:
     m0:
       effect: DOT
-      target: Target
+      target: Linear
       group: Enemy
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 10
+      base: 1
       scale: 1
     Cost:
       base: 1
       scale: 0
     Mana:
-      base: 30
+      base: 0
       scale: 0
     Cooldown:
-      base: 40
+      base: 0
       scale: 0
     Range:
       base: 8
       scale: 0
     DOT Damage:
       base: 4
-      scale: 0
+      scale: 2
     DOT Duration:
-      base: 5
+      base: 4
       scale: 0
     DOT Frequency:
       base: 1

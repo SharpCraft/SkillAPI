@@ -1,0 +1,27 @@
+Salto de fe:
+  type: Target
+  indicator: feather,0
+  max-level: 1
+  needs-permission: false
+  description:
+  - 'Atrae a un aliado hacia'
+  - 'el Sacerdote.'
+  permissions: []
+  active: {}
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 10
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 80
+      scale: 0
+    Cooldown:
+      base: 40
+      scale: 0
+  values: {}
+  strings: {}

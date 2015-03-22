@@ -1,10 +1,10 @@
-Druida:
-  prefix: '&5Druida'
+Paladin:
+  prefix: '&6Paladin'
   max-level: 20
-  health-base: 13
+  health-base: 15
   health-scale: 1
-  mana-base: 0
-  mana-scale: 0
+  mana-base: 100
+  mana-scale: 5
   profess-level: 20
   needs-permission: false
   permissions: []

@@ -1,26 +1,24 @@
 Intervencion:
-  type: Passive
+  type: Target
   indicator: Gold Chestplate,0
   max-level: 2
   needs-permission: false
   description:
-  - 'Corres a gran velocidad'
-  - 'hacia un aliado en un'
-  - 'radio de 10 bloques, lo'
-  - 'que hace que tu y tu'
-  - 'aliado intercepteis todos'
-  - 'los ataques recibidos'
-  - 'durante 4/6 segundos.'
-  message: 'Lanzando Intervencion'
+  - 'Corres en defensa de un'
+  - 'aliado proporcionando un'
+  - 'escudo ati y al aliado'
+  - 'que reduce todos los'
+  - 'tipos de daño durante 3/4'
+  - 'segundos'
   permissions: []
   active:
     m0:
-      effect: Launch
+      effect: Potion
       target: Target
       group: Ally
     m1:
-      effect: Potion
-      target: Area
+      effect: Launch
+      target: Target
       group: Ally
   passive: {}
   embed: {}
@@ -30,31 +28,28 @@ Intervencion:
       scale: 1
     Cost:
       base: 1
-      scale: 1
+      scale: 0
     Mana:
-      base: 30
+      base: 60
       scale: 10
     Cooldown:
-      base: 120
+      base: 60
       scale: 30
     Range:
-      base: 10
-      scale: 0
-    Radius:
       base: 5
+      scale: 1
+    Tier:
+      base: 100
       scale: 0
+    Duration:
+      base: 3
+      scale: 1
     Vertical Speed:
       base: 1
       scale: 0
     Horizontal Speed:
-      base: 3
+      base: 4
       scale: 0
-    Tier:
-      base: 255
-      scale: 0
-    Duration:
-      base: 5
-      scale: 2
   values:
     Type: 11
   strings: {}

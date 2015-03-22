@@ -5,24 +5,16 @@ Cargar:
   needs-permission: false
   description:
   - 'Carga hacia el objetivo'
-  - 'infligiendo un corazón y'
-  - 'tu proxima habilidad'
-  - 'inflinge un punto más de'
-  - 'daño'
-  message: 'Lanzando Cargar'
+  - 'infligiendo 4 corazones.'
   permissions: []
   active:
     m0:
       effect: Launch
-      target: Self
+      target: Target
       group: Enemy
     m1:
       effect: Damage
-      target: Linear
-      group: Enemy
-    m2:
-      effect: DamageBonus
-      target: Self
+      target: Target
       group: Enemy
   passive: {}
   embed: {}
@@ -34,28 +26,22 @@ Cargar:
       base: 1
       scale: 0
     Mana:
-      base: 35
+      base: 30
       scale: 0
     Cooldown:
-      base: 120
+      base: 40
       scale: 0
     Range:
-      base: 7
+      base: 6
       scale: 0
     Vertical Speed:
-      base: 0
+      base: 1
       scale: 0
     Horizontal Speed:
-      base: 3
-      scale: 0
-    Damage:
-      base: 2
-      scale: 2
-    Bonus:
-      base: 1
+      base: 4
       scale: 1
-    Bonus Duration:
-      base: 5
+    Damage:
+      base: 4
       scale: 0
   values: {}
   strings: {}

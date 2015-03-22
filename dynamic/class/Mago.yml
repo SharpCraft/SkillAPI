@@ -1,10 +1,10 @@
-Druida:
-  prefix: '&5Druida'
+Mago:
+  prefix: '&9Mago'
   max-level: 20
-  health-base: 13
+  health-base: 9
   health-scale: 1
-  mana-base: 0
-  mana-scale: 0
+  mana-base: 50
+  mana-scale: 10
   profess-level: 20
   needs-permission: false
   permissions: []

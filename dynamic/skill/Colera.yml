@@ -1,0 +1,25 @@
+Colera:
+  type: Target
+  indicator: Dead bush,0
+  max-level: 5
+  needs-permission: false
+  description: []
+  permissions: []
+  active: {}
+  passive: {}
+  embed: {}
+  attributes:
+    Level:
+      base: 1
+      scale: 1
+    Cost:
+      base: 1
+      scale: 0
+    Mana:
+      base: 0
+      scale: 0
+    Cooldown:
+      base: 0
+      scale: 0
+  values: {}
+  strings: {}

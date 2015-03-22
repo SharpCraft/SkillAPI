@@ -1,13 +1,14 @@
-Regeneracion iracunda:
+Barrera de escudos:
   type: Self
-  indicator: Potion,8193
+  indicator: Watch,0
   max-level: 2
   needs-permission: false
   description:
-  - 'La íra de tu interior te'
-  - 'permite regenerarte 16/24'
-  - 'corazones cada segundo'
-  - 'durante 5/6 segundos.'
+  - 'Te proteges con un escudo'
+  - 'de todo tipo de ataques y'
+  - 'te otorga velocidad de'
+  - 'movimiento durante 2/4'
+  - 'segundos.'
   permissions: []
   active:
     m0:
@@ -18,23 +19,23 @@ Regeneracion iracunda:
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 15
       scale: 1
     Cost:
       base: 1
       scale: 0
     Mana:
-      base: 50
+      base: 25
       scale: 10
     Cooldown:
-      base: 80
-      scale: 10
-    Tier:
-      base: 4
+      base: 14
       scale: 2
+    Tier:
+      base: 100
+      scale: 0
     Duration:
-      base: 5
-      scale: 1
+      base: 2
+      scale: 2
   values:
-    Type: 10
+    Type: 11
   strings: {}

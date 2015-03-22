@@ -1,22 +1,20 @@
 Sacerdote:
   prefix: '&fSacerdote'
   max-level: 20
-  health-base: 15
+  health-base: 11
   health-scale: 1
-  mana-base: 20
-  mana-scale: 3
+  mana-base: 50
+  mana-scale: 10
   profess-level: 20
   needs-permission: false
   permissions: []
   skills:
-  - Cura
-  - Revitalia
-  - Antidoto
-  - Freedom
-  - Sacro
-  - Purgar
-  - Vidamagi
-  - Envenenar
-  - Incinerar
-  - Deseo
-  - Dispersion
+  - Purificar
+  - Punicion
+  - Estrella divina
+  - Coraza espiritual
+  - Tortura mental
+  - Salto de fe
+  - Sanacion conjunta
+  - Renovar
+  - Tiempo prestado

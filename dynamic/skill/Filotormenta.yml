@@ -1,42 +1,43 @@
-Heridas profundas:
-  type: Target
-  indicator: Ghast tear,0
+Filotormenta:
+  type: Area
+  indicator: Diamond Sword,0
   max-level: 1
   needs-permission: false
   description:
-  - 'Haces sangrar al objetivo'
-  - 'inflingiendo 4 corazones'
-  - 'de daño cada segundo'
-  - 'durante 5 segundos'
+  - 'Giras con todas tus'
+  - 'fuerzas e infliges 8'
+  - 'corazones cada 2 segundos'
+  - 'en un radio de 4 bloques'
+  - 'durante 6 segundos.'
   permissions: []
   active:
     m0:
       effect: DOT
-      target: Target
+      target: Area
       group: Enemy
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 10
+      base: 20
       scale: 1
     Cost:
       base: 1
       scale: 0
     Mana:
-      base: 30
+      base: 75
       scale: 0
     Cooldown:
-      base: 40
+      base: 90
       scale: 0
-    Range:
-      base: 8
+    Radius:
+      base: 3
       scale: 0
     DOT Damage:
-      base: 4
+      base: 5
       scale: 0
     DOT Duration:
-      base: 5
+      base: 6
       scale: 0
     DOT Frequency:
       base: 1

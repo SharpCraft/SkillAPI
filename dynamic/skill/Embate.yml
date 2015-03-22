@@ -1,46 +1,46 @@
 Embate:
-  type: Target
-  indicator: Diamond Hoe,0
+  type: Skill Shot
+  indicator: Ghast tear,0
   max-level: 2
   needs-permission: false
   description:
-  - 'Reduces la defensa del'
-  - 'objetivo un 50/60 %'
-  - 'durante 5 segundos.'
-  message: 'Lanzando Embate'
+  - 'Lanzas un rugido muy'
+  - 'fuerte que provoca que'
+  - 'lanzes a todos lo'
+  - 'enemigos hacia atras y'
+  - 'los aturdas durante 1/2'
+  - 'segundos.'
   permissions: []
   active:
     m0:
-      effect: DefenseModifier
-      target: Target
+      effect: Push
+      target: Cone
+      group: Enemy
+    m1:
+      effect: Status
+      target: Cone
       group: Enemy
   passive: {}
   embed: {}
   attributes:
     Level:
-      base: 1
+      base: 10
       scale: 1
     Cost:
       base: 1
-      scale: 1
+      scale: 0
     Mana:
-      base: 40
+      base: 30
       scale: 10
     Cooldown:
-      base: 180
-      scale: 20
-    Range:
-      base: 8
+      base: 25
+      scale: 10
+    Push Speed:
+      base: 3
       scale: 0
-    Modifier Duration:
-      base: 5
-      scale: 0
-    Attacks:
+    Length:
       base: 1
-      scale: 0
-    Modifier Chance:
-      base: 1
-      scale: 0
+      scale: 1
   values:
-    Attack Type: 1
+    Status: 0
   strings: {}

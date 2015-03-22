@@ -1,13 +1,13 @@
-Regeneracion iracunda:
+Forma feral:
   type: Self
-  indicator: Potion,8193
-  max-level: 2
+  indicator: leather,0
+  max-level: 1
   needs-permission: false
   description:
-  - 'La íra de tu interior te'
-  - 'permite regenerarte 16/24'
-  - 'corazones cada segundo'
-  - 'durante 5/6 segundos.'
+  - 'Te transformas en un'
+  - 'felino otorgandote'
+  - 'velocidad de movimiento'
+  - 'durante 30 segundos.'
   permissions: []
   active:
     m0:
@@ -24,17 +24,17 @@ Regeneracion iracunda:
       base: 1
       scale: 0
     Mana:
-      base: 50
-      scale: 10
+      base: 0
+      scale: 0
     Cooldown:
-      base: 80
-      scale: 10
+      base: 50
+      scale: 0
     Tier:
-      base: 4
-      scale: 2
+      base: 0
+      scale: 0
     Duration:
-      base: 5
-      scale: 1
+      base: 30
+      scale: 0
   values:
-    Type: 10
+    Type: 1
   strings: {}
