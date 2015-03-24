@@ -15,7 +15,7 @@ Hoja afilada:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&rAl dañar a enemigos cuerpo a cuerpo tiene un 5/10/15/20/25% de probabilidad de infligir 4/5/6/7/8 puntos de daño extra. '
+  - '&r'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:

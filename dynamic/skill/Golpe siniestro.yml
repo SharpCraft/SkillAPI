@@ -2,7 +2,7 @@ Golpe siniestro:
   name: 'Golpe siniestro'
   type: 'Objetivo'
   max-level: 2
-  skill-req: 'Veneno mortal'
+  skill-req: ''
   skill-req-level: 1
   needs-permission: 'True'
   msg: ''
@@ -15,7 +15,7 @@ Golpe siniestro:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&rDas un golpe siniestro que inflige 10/15s.'
+  - '&r'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:

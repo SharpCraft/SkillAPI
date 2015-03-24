@@ -15,7 +15,7 @@ Veneno letal:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&rEnvenenas tu arma, lo que tiene un 75/85/95% de probabilidad de aplicar veneno 1/1/2 sobre el objetivo. Dura 10/20/30s.'
+  - '&r'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:

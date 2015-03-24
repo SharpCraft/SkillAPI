@@ -15,7 +15,7 @@ Sigilo:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&rTe vuelves invisible al agacharte durante 50/65/80 segundos. Mientras eres invisible tienes velocidad aumentada de nivel 1/2/3.'
+  - '&r'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:
@@ -39,25 +39,40 @@ Sigilo:
           data:
             icon-key: ''
           children:
-            Potion-c:
-              type: 'mechanic'
+            Flag-c:
+              type: 'condition'
               data:
                 icon-key: ''
-                counts: 'True'
-                potion: 'Invisibility'
-                ambient: 'False'
-                tier-base: 1
-                tier-scale: 0
-                seconds-base: 50
-                seconds-scale: 15
-            Potion-d:
-              type: 'mechanic'
-              data:
-                icon-key: ''
-                counts: 'True'
-                potion: 'Speed'
-                ambient: 'False'
-                tier-base: 1
-                tier-scale: 1
-                seconds-base: 50
-                seconds-scale: 15
+                type: 'Not Set'
+                key: 'recarga'
+              children:
+                Potion-d:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Invisibility'
+                    ambient: 'False'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 10
+                    seconds-scale: 10
+                Potion-e:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Speed'
+                    ambient: 'False'
+                    tier-base: 2
+                    tier-scale: 0
+                    seconds-base: 10
+                    seconds-scale: 10
+                Flag-f:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    key: 'recarga'
+                    seconds-base: 60
+                    seconds-scale: 0
