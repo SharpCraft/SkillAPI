@@ -1,0 +1,30 @@
+Asesino:
+  name: 'Asesino'
+  prefix: '&eAsesino'
+  group: 'class'
+  mana: '&2Sin recurso'
+  max-level: 20
+  parent: ''
+  needs-permission: 'True'
+  exp-source: 425
+  mana-regen: 1
+  tree: 'Basic Vertical'
+  combo: 0
+  skills:
+  - 'Sigilo'
+  - 'Hoja afilada'
+  - 'Veneno letal'
+  - 'Golpe siniestro'
+  - 'Salto'
+  - 'Velocidad del rayo'
+  - 'Loto mortal'
+  - ''
+  icon: 'Iron Sword'
+  icon-data: 0
+  icon-lore:
+  - '&dLos asesinos son débiles pero son capaces de infligir grandes cantidades de daño en ráfagas cortas y rápidas y además gozan de varias habilidades de movilidad y sigilo.'
+  attributes:
+    health-base: 14
+    health-scale: 1
+    mana-base: 0
+    mana-scale: 0

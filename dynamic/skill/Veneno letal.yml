@@ -1,0 +1,97 @@
+Veneno letal:
+  name: 'Veneno letal'
+  type: 'Bonificación de ataque'
+  max-level: 3
+  skill-req: 'Hoja afilada'
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Potion'
+  icon-data: 8196
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rEnvenenas tu arma, lo que tiene un 75/85/95% de probabilidad de aplicar veneno 1/1/2 sobre el objetivo. Dura 10/20/30s.'
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 4
+    level-scale: 2
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 60
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Flag-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'True'
+            key: 'activo'
+            seconds-base: 10
+            seconds-scale: 10
+    Physical Damage-c:
+      type: 'trigger'
+      data:
+        icon-key: 'activo'
+        target: 'False'
+        type: 'Melee'
+        dmg-min: 0
+        dmg-max: 999
+      children:
+        Chance-d:
+          type: 'condition'
+          data:
+            icon-key: ''
+            chance-base: 75
+            chance-scale: 10
+          children:
+            Skill Level-e:
+              type: 'condition'
+              data:
+                icon-key: ''
+                skill: 'Veneno mortal'
+                min-level: 1
+                max-level: 2
+              children:
+                Potion-f:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'False'
+                    potion: 'Poison'
+                    ambient: 'True'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 10
+                    seconds-scale: 10
+            Skill Level-g:
+              type: 'condition'
+              data:
+                icon-key: ''
+                skill: 'Veneno mortal'
+                min-level: 3
+                max-level: 3
+              children:
+                Potion-h:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'False'
+                    potion: 'Poison'
+                    ambient: 'True'
+                    tier-base: 2
+                    tier-scale: 0
+                    seconds-base: 30
+                    seconds-scale: 0

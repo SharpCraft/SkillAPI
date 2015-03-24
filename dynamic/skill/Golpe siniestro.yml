@@ -1,0 +1,43 @@
+Golpe siniestro:
+  name: 'Golpe siniestro'
+  type: 'Objetivo'
+  max-level: 2
+  skill-req: 'Veneno mortal'
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Iron Axe'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rDas un golpe siniestro que inflige 10/15s.'
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 14
+    level-scale: 16
+    cost-base: 1
+    cost-scale: 1
+    cooldown-base: 45
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Damage-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            type: 'Damage'
+            value-base: 10
+            value-scale: 5

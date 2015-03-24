@@ -1,0 +1,54 @@
+Hoja afilada:
+  name: 'Hoja afilada'
+  type: 'Pasiva'
+  max-level: 5
+  skill-req: 'Sigilo'
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Redstone'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rAl dañar a enemigos cuerpo a cuerpo tiene un 5/10/15/20/25% de probabilidad de infligir 4/5/6/7/8 puntos de daño extra. '
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 3
+    level-scale: 2
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 3
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Physical Damage-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+        target: 'False'
+        type: 'Melee'
+        dmg-min: 1
+        dmg-max: 20
+      children:
+        Chance-b:
+          type: 'condition'
+          data:
+            icon-key: ''
+            chance-base: 5
+            chance-scale: 5
+          children:
+            Damage-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                type: 'Damage'
+                value-base: 4
+                value-scale: 1

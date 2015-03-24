@@ -1,0 +1,66 @@
+Loto mortal:
+  name: 'Loto mortal'
+  type: 'Área'
+  max-level: 1
+  skill-req: 'Salto'
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Red Rose'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rInfliges 17 puntos de daño a los enemigos cercanos y los ralentizas durante 5 segundos.'
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 20
+    level-scale: 0
+    cost-base: 3
+    cost-scale: 0
+    cooldown-base: 120
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Area-b:
+          type: 'target'
+          data:
+            icon-key: ''
+            radius-base: 5
+            radius-scale: 0
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: 10
+            max-scale: 0
+          children:
+            Damage-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                type: 'Damage'
+                value-base: 17
+                value-scale: 1
+            Potion-d:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                potion: 'Slow'
+                ambient: 'True'
+                tier-base: 2
+                tier-scale: 0
+                seconds-base: 5
+                seconds-scale: 0

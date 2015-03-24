@@ -1,0 +1,63 @@
+Sigilo:
+  name: 'Sigilo'
+  type: 'Efecto'
+  max-level: 3
+  skill-req: ''
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Eye of Ender'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rTe vuelves invisible al agacharte durante 50/65/80 segundos. Mientras eres invisible tienes velocidad aumentada de nivel 1/2/3.'
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 1
+    level-scale: 4
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 30
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Crouch-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+        type: 'Start Crouching'
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Potion-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                potion: 'Invisibility'
+                ambient: 'False'
+                tier-base: 1
+                tier-scale: 0
+                seconds-base: 50
+                seconds-scale: 15
+            Potion-d:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                potion: 'Speed'
+                ambient: 'False'
+                tier-base: 1
+                tier-scale: 1
+                seconds-base: 50
+                seconds-scale: 15

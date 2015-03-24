@@ -1,0 +1,57 @@
+Velocidad del rayo:
+  name: 'Velocidad del rayo'
+  type: 'Objetivo'
+  max-level: 1
+  skill-req: 'Salto'
+  skill-req-level: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Nether Star'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '{req:level}Nivel: {attr:level}'
+  - '{req:cost}Coste: {attr:cost}'
+  - ''
+  - '&rTe mueves a la velocidad del rayo, acércandote a tu objetivo, aturdiéndolo durante 2 segundos e infligiendo 10 puntos de daño.'
+  - ''
+  - '&2Tiempo de recarga: {attr:cooldown}'
+  attributes:
+    level-base: 20
+    level-scale: 0
+    cost-base: 3
+    cost-scale: 0
+    cooldown-base: 120
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Warp Target-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            type: 'Caster to Target'
+        Damage-c:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            type: 'Damage'
+            value-base: 10
+            value-scale: 0
+        Status-d:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            status: 'Stun'
+            duration-base: 2
+            duration-scale: 0
