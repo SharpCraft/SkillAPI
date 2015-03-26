@@ -1,0 +1,36 @@
+Quitar cooldown:
+  name: 'Quitar cooldown'
+  type: 'Objetivo'
+  max-level: 1
+  skill-req: ''
+  skill-req-level: 1
+  needs-permission: 'False'
+  msg: ''
+  icon: 'Melon'
+  icon-data: 0
+  icon-lore:
+  - 'REFRESCA A TU OBJETIVO'
+  attributes:
+    level-base: 1
+    level-scale: 0
+    cost-base: 0
+    cost-scale: 0
+    cooldown-base: 0
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Cooldown-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            skill: 'all'
+            type: 'Percent'
+            value-base: 100
+            value-scale: 0

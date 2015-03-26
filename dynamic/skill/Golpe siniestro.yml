@@ -15,7 +15,7 @@ Golpe siniestro:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&r'
+  - '&rInflige 10/15 puntos de daño.'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:

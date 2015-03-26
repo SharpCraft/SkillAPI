@@ -15,7 +15,10 @@ Hoja afilada:
   - '{req:level}Nivel: {attr:level}'
   - '{req:cost}Coste: {attr:cost}'
   - ''
-  - '&r'
+  - '&rAl golpear cuerpo a cuerpo'
+  - 'tienes un 5/10/15/20/25% de'
+  - 'probabilidad de infligir 4/5/6/7/7'
+  - 'puntos de daño.'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:

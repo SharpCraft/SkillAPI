@@ -12,10 +12,15 @@ Veneno letal:
   - '&d{name} &7({level}/{max})'
   - '&2Tipo: &6{type}'
   - ''
-  - '{req:level}Nivel: {attr:level}'
-  - '{req:cost}Coste: {attr:cost}'
+  - '&2&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
   - ''
-  - '&r'
+  - '&rEnvenenas tu espada, por lo que'
+  - 'tienes un 75/85/95% de envenenar'
+  - 'al objetivo durante 5/8/11 segundos.'
   - ''
   - '&2Tiempo de recarga: {attr:cooldown}'
   attributes:
@@ -50,20 +55,19 @@ Veneno letal:
         dmg-min: 0
         dmg-max: 999
       children:
-        Chance-d:
+        Flag-d:
           type: 'condition'
           data:
             icon-key: ''
-            chance-base: 75
-            chance-scale: 10
+            type: 'Set'
+            key: 'activo'
           children:
-            Skill Level-e:
+            Chance-e:
               type: 'condition'
               data:
                 icon-key: ''
-                skill: 'Veneno mortal'
-                min-level: 1
-                max-level: 2
+                chance-base: 75
+                chance-scale: 10
               children:
                 Potion-f:
                   type: 'mechanic'
@@ -74,24 +78,5 @@ Veneno letal:
                     ambient: 'True'
                     tier-base: 1
                     tier-scale: 0
-                    seconds-base: 10
-                    seconds-scale: 10
-            Skill Level-g:
-              type: 'condition'
-              data:
-                icon-key: ''
-                skill: 'Veneno mortal'
-                min-level: 3
-                max-level: 3
-              children:
-                Potion-h:
-                  type: 'mechanic'
-                  data:
-                    icon-key: ''
-                    counts: 'False'
-                    potion: 'Poison'
-                    ambient: 'True'
-                    tier-base: 2
-                    tier-scale: 0
-                    seconds-base: 30
-                    seconds-scale: 0
+                    seconds-base: 5
+                    seconds-scale: 3

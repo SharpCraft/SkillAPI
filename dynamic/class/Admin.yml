@@ -1,0 +1,24 @@
+Admin:
+  name: 'Admin'
+  prefix: '&c&lAdmin'
+  group: 'class'
+  mana: '&2Sin recurso'
+  max-level: 1
+  parent: ''
+  needs-permission: 'True'
+  exp-source: 425
+  mana-regen: 1
+  tree: 'Requirement'
+  combo: 0
+  skills:
+  - 'Cura'
+  - 'Quitar cooldown'
+  icon: 'Command'
+  icon-data: 0
+  icon-lore:
+  - '&dLos admins te vigilan desde las sombras.'
+  attributes:
+    health-base: 40
+    health-scale: 0
+    mana-base: 0
+    mana-scale: 0
