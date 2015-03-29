@@ -1,0 +1,23 @@
+Guerrero:
+  name: 'Guerrero'
+  prefix: '&aGuerrero'
+  group: 'class'
+  mana: '&2Ira'
+  max-level: 20
+  parent: ''
+  needs-permission: 'True'
+  exp-source: 417
+  mana-regen: 2
+  tree: 'Basic Vertical'
+  combo: 0
+  skills:
+  - ''
+  icon: 'Diamond Axe'
+  icon-data: 0
+  icon-lore:
+  - '&dEl guerrero es una clase resistente capaz de defender a aliados que inflige una cantidad de daño moderada.'
+  attributes:
+    health-base: 16
+    health-scale: 1
+    mana-base: 100
+    mana-scale: 0

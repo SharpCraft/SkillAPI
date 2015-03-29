@@ -1,0 +1,57 @@
+Regeneración iracunda:
+  name: 'Regeneración iracunda'
+  type: 'A ti mismo'
+  max-level: 2
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Potion'
+  icon-data: 8193
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rLa ira de tu interior te permite'
+  - '&rregenerar 16/24 corazones cada'
+  - '&rsegundo durante 5/6 segundos.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 1
+    level-scale: 1
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 80
+    cooldown-scale: 10
+    mana-base: 40
+    mana-scale: 10
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Potion-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                potion: 'Regeneration'
+                ambient: 'False'
+                tier-base: 4
+                tier-scale: 2
+                seconds-base: 4
+                seconds-scale: 1

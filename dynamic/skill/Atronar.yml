@@ -1,0 +1,81 @@
+Atronar:
+  name: 'Atronar'
+  type: 'Área'
+  max-level: 4
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'TNT'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rAturde a varios objetivos en un área de'
+  - '&r2,5/3/3,5/4 bloques durante 0,5/1/1,5/2'
+  - '&rsegundos. También reduce la velocidad'
+  - '&rde movimiento durante 1 segundo.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 5
+    level-scale: 1
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 40
+    cooldown-scale: 5
+    mana-base: 45
+    mana-scale: 5
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Area-b:
+          type: 'target'
+          data:
+            icon-key: ''
+            radius-base: 2.5
+            radius-scale: 0.5
+            group: 'Enemy'
+            wall: 'False'
+            caster: 'False'
+            max-base: 99
+            max-scale: 0
+          children:
+            Status-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                status: 'Stun'
+                duration-base: 0.5
+                duration-scale: 0.5
+            Delay-d:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                delay-base: 0.5
+                delay-scale: 0.5
+              children:
+                Potion-e:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'False'
+                    potion: 'Slow'
+                    ambient: 'False'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 1
+                    seconds-scale: 0

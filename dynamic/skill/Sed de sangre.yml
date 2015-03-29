@@ -1,0 +1,79 @@
+Sed de sangre:
+  name: 'Sed de sangre'
+  type: 'Pasiva'
+  max-level: 2
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Skull'
+  icon-data: 1
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rUna sed de sangre recorre tus'
+  - '&rvenas en busca de venganza.'
+  - '&rCuando tu vida llega a 4 corazones,'
+  - '&robtienes una fuerza sobrehumana'
+  - '&rdurante 4/5 segundos.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 5
+    level-scale: 1
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 90
+    cooldown-scale: -10
+    mana-base: 0
+    mana-scale: 0
+  components:
+    Initialize-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Health-b:
+          type: 'condition'
+          data:
+            icon-key: ''
+            type: 'Health'
+            min-value-base: 1
+            min-value-scale: 0
+            max-value-base: 8
+            max-value-scale: 0
+          children:
+            Flag-c:
+              type: 'condition'
+              data:
+                icon-key: ''
+                type: 'Not Set'
+                key: 'recarga'
+              children:
+                Potion-d:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'False'
+                    potion: 'Increase Damage'
+                    ambient: 'True'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 4
+                    seconds-scale: 1
+                Flag-e:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'False'
+                    key: 'recarga'
+                    seconds-base: 90
+                    seconds-scale: -10

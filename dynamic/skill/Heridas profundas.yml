@@ -1,0 +1,60 @@
+Heridas profundas:
+  name: 'Heridas profundas'
+  type: 'Objetivo'
+  max-level: 1
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Ghast Tear'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rHaces sangrar al objetivo'
+  - '&rinflingiendo 12 corazones de'
+  - '&rdaño cada segundo durante'
+  - '&r5 segundos.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 10
+    level-scale: 0
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 60
+    cooldown-scale: 0
+    mana-base: 30
+    mana-scale: 0
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Repeat-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            repetitions-base: 5
+            repetitions-scale: 0
+            period: 1
+            delay: 0
+          children:
+            Damage-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                type: 'Damage'
+                value-base: 12
+                value-scale: 0
