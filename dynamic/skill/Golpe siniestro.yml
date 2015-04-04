@@ -3,7 +3,7 @@ Golpe siniestro:
   type: 'Objetivo'
   max-level: 2
   skill-req: ''
-  skill-req-level: 1
+  skill-req-lvl: 1
   needs-permission: 'True'
   msg: ''
   icon: 'Iron Axe'
@@ -12,12 +12,15 @@ Golpe siniestro:
   - '&d{name} &7({level}/{max})'
   - '&2Tipo: &6{type}'
   - ''
-  - '{req:level}Nivel: {attr:level}'
-  - '{req:cost}Coste: {attr:cost}'
+  - '&2&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
   - ''
   - '&rInflige 10/15 puntos de daño.'
   - ''
-  - '&2Tiempo de recarga: {attr:cooldown}'
+  - '&2{attr:cooldown}'
   attributes:
     level-base: 14
     level-scale: 16

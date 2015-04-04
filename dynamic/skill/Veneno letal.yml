@@ -3,7 +3,7 @@ Veneno letal:
   type: 'Bonificación de ataque'
   max-level: 3
   skill-req: 'Hoja afilada'
-  skill-req-level: 1
+  skill-req-lvl: 1
   needs-permission: 'True'
   msg: ''
   icon: 'Potion'
@@ -22,7 +22,7 @@ Veneno letal:
   - 'tienes un 75/85/95% de envenenar'
   - 'al objetivo durante 5/8/11 segundos.'
   - ''
-  - '&2Tiempo de recarga: {attr:cooldown}'
+  - '&2{attr:cooldown}'
   attributes:
     level-base: 4
     level-scale: 2

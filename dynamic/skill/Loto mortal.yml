@@ -3,7 +3,7 @@ Loto mortal:
   type: 'Área'
   max-level: 1
   skill-req: 'Salto'
-  skill-req-level: 1
+  skill-req-lvl: 1
   needs-permission: 'True'
   msg: ''
   icon: 'Red Rose'
@@ -22,7 +22,7 @@ Loto mortal:
   - 'daño y ralentiza al objetivo '
   - 'durante 5 segundos.'
   - ''
-  - '&2Tiempo de recarga: {attr:cooldown}'
+  - '&2{attr:cooldown}'
   attributes:
     level-base: 20
     level-scale: 0

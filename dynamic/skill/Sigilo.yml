@@ -3,7 +3,7 @@ Sigilo:
   type: 'Efecto'
   max-level: 3
   skill-req: ''
-  skill-req-level: 1
+  skill-req-lvl: 1
   needs-permission: 'True'
   msg: ''
   icon: 'Eye of Ender'
@@ -19,17 +19,17 @@ Sigilo:
   - '{attr:cost}'
   - ''
   - '&rAgachate para hacerte invisible'
-  - 'durante 10/20/30 segundos. '
+  - 'durante 10/30/50 segundos. '
   - 'Mientras eres invisible te desplazas'
   - 'más rápido.'
   - ''
-  - '&2Tiempo de recarga: {attr:cooldown}'
+  - '&2{attr:cooldown}'
   attributes:
     level-base: 1
     level-scale: 4
     cost-base: 1
     cost-scale: 0
-    cooldown-base: 30
+    cooldown-base: 120
     cooldown-scale: 0
     mana-base: 0
     mana-scale: 0
@@ -62,7 +62,7 @@ Sigilo:
                     tier-base: 1
                     tier-scale: 0
                     seconds-base: 10
-                    seconds-scale: 10
+                    seconds-scale: 20
                 Potion-e:
                   type: 'mechanic'
                   data:
@@ -73,12 +73,12 @@ Sigilo:
                     tier-base: 2
                     tier-scale: 0
                     seconds-base: 10
-                    seconds-scale: 10
+                    seconds-scale: 20
                 Flag-f:
                   type: 'mechanic'
                   data:
                     icon-key: ''
                     counts: 'True'
                     key: 'recarga'
-                    seconds-base: 60
+                    seconds-base: 120
                     seconds-scale: 0

@@ -3,7 +3,7 @@ Hoja afilada:
   type: 'Pasiva'
   max-level: 5
   skill-req: 'Sigilo'
-  skill-req-level: 1
+  skill-req-lvl: 1
   needs-permission: 'True'
   msg: ''
   icon: 'Redstone'
@@ -12,15 +12,18 @@ Hoja afilada:
   - '&d{name} &7({level}/{max})'
   - '&2Tipo: &6{type}'
   - ''
-  - '{req:level}Nivel: {attr:level}'
-  - '{req:cost}Coste: {attr:cost}'
+  - '&2&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
   - ''
   - '&rAl golpear cuerpo a cuerpo'
-  - 'tienes un 5/10/15/20/25% de'
-  - 'probabilidad de infligir 4/5/6/7/7'
-  - 'puntos de daño.'
+  - '&rtienes un 5/10/15/20/25% de'
+  - '&rprobabilidad de infligir 4/5/6/7/7'
+  - '&rpuntos de daño.'
   - ''
-  - '&2Tiempo de recarga: {attr:cooldown}'
+  - '&2{attr:cooldown}'
   attributes:
     level-base: 3
     level-scale: 2
