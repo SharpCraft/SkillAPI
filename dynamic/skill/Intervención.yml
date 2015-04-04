@@ -1,0 +1,81 @@
+Intervención:
+  name: 'Intervención'
+  type: 'Objetivo'
+  max-level: 2
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'True'
+  msg: ''
+  icon: 'Gold Chestplate'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rCorres en defensa de un aliado'
+  - '&rproporcionando un escudo a ti'
+  - '&ry al aliado que reduce todo el'
+  - '&rdaño recibido durante 3/4 '
+  - '&rsegundos.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 10
+    level-scale: 1
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 60
+    cooldown-scale: 30
+    mana-base: 50
+    mana-scale: 10
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Launch-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                forward-base: 3
+                forward-scale: 0
+                upward-base: 1
+                upward-scale: 0
+                right-base: 0
+                right-scale: 0
+            Potion-d:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                potion: 'Damage Resistance'
+                ambient: 'False'
+                tier-base: 100
+                tier-scale: 0
+                seconds-base: 3
+                seconds-scale: 1
+        Potion-e:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'False'
+            potion: 'Damage Resistance'
+            ambient: 'False'
+            tier-base: 100
+            tier-scale: 0
+            seconds-base: 3
+            seconds-scale: 1

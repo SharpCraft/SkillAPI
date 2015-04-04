@@ -11,7 +11,16 @@ Guerrero:
   tree: 'Basic Vertical'
   combo: 0
   skills:
-  - ''
+  - 'Atronar'
+  - 'Cargar'
+  - 'Golpe mortal'
+  - 'Regeneración iracunda'
+  - 'Sed de sangre'
+  - 'Heridas profundas'
+  - 'Embate'
+  - 'Intervención'
+  - 'Barrera'
+  - 'Filotormenta'
   icon: 'Diamond Axe'
   icon-data: 0
   icon-lore:

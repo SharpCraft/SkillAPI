@@ -1,0 +1,69 @@
+Barrera:
+  name: 'Barrera'
+  type: 'A ti mismo'
+  max-level: 2
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'False'
+  msg: ''
+  icon: 'Watch'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Tipo: &6{type}'
+  - ''
+  - '&a&lRequiere:'
+  - '{req:level}'
+  - '{req:cost}'
+  - '{attr:level}'
+  - '{attr:cost}'
+  - ''
+  - '&rTe protege con un escudo de'
+  - '&rtodo tipo de ataques y te otorga'
+  - '&rvelocidad de movimiento durante'
+  - '&r2/4 segundos.'
+  - ''
+  - '&2{attr:mana}'
+  - '&2{attr:cooldown}'
+  attributes:
+    level-base: 15
+    level-scale: 1
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 16
+    cooldown-scale: 2
+    mana-base: 25
+    mana-scale: 10
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Potion-c:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                potion: 'Damage Resistance'
+                ambient: 'True'
+                tier-base: 100
+                tier-scale: 0
+                seconds-base: 2
+                seconds-scale: 2
+            Potion-d:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'False'
+                potion: 'Speed'
+                ambient: 'False'
+                tier-base: 1
+                tier-scale: 1
+                seconds-base: 2
+                seconds-scale: 2
