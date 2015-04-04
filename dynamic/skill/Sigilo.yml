@@ -19,9 +19,9 @@ Sigilo:
   - '{attr:cost}'
   - ''
   - '&rAgachate para hacerte invisible'
-  - 'durante 10/30/50 segundos. '
-  - 'Mientras eres invisible te desplazas'
-  - 'más rápido.'
+  - '&rdurante 10/30/50 segundos. '
+  - '&rMientras eres invisible te desplazas'
+  - '&rmás rápido.'
   - ''
   - '&2{attr:cooldown}'
   attributes:

@@ -19,8 +19,8 @@ Loto mortal:
   - '{attr:cost}'
   - ''
   - '&rInflige 17 puntos de'
-  - 'daño y ralentiza al objetivo '
-  - 'durante 5 segundos.'
+  - '&rdaño y ralentiza al objetivo '
+  - '&rdurante 5 segundos.'
   - ''
   - '&2{attr:cooldown}'
   attributes:

@@ -19,9 +19,9 @@ Velocidad del rayo:
   - '{attr:cost}'
   - ''
   - '&rTe mueves rápidamente hacia el'
-  - 'objetivo, infligiendo 10 puntos de'
-  - 'daño y ralentizandole durante 2'
-  - 'segundos.'
+  - '&robjetivo, infligiendo 10 puntos de'
+  - '&rdaño y ralentizandole durante 2'
+  - '&rsegundos.'
   - ''
   - '&2{attr:cooldown}'
   attributes:

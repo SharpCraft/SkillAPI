@@ -19,8 +19,8 @@ Veneno letal:
   - '{attr:cost}'
   - ''
   - '&rEnvenenas tu espada, por lo que'
-  - 'tienes un 75/85/95% de envenenar'
-  - 'al objetivo durante 5/8/11 segundos.'
+  - '&rtienes un 75/85/95% de envenenar'
+  - '&ral objetivo durante 5/8/11 segundos.'
   - ''
   - '&2{attr:cooldown}'
   attributes:
